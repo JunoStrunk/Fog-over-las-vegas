@@ -85,6 +85,17 @@ public class PartyManager : MonoBehaviour
         CreatePartyFollower(ResolvePartyMember(newMember));
     }
 
+    public void AddPartyMemberAtGameObject(string newMember, GameObject positioner)
+    {
+        _Party.Add(newMember);
+        GameObject follower = ResolvePartyMember(newMember);
+        GameObject newFollower = Instantiate(follower).gameObject;
+        newFollower.transform.position = positioner.transform.position;
+        newFollower.GetComponent<PartyFollower>().setFollowTarget(_currentFollowTarget);
+        _currentFollowTarget = newFollower;
+        positioner.SetActive(false);
+    }
+
     private GameObject ResolvePartyMember(string memberAlias)
     {
         GameObject newMember = _Gleep;

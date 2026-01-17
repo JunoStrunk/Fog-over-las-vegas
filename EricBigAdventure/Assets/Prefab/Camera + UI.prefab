@@ -358,6 +358,26 @@ MonoBehaviour:
     font: {fileID: 11400000, guid: 7e9697c8b41f50e41a5a4cca595b0309, type: 2}
     fontColor: {r: 0, g: 0.17580687, b: 0.8238993, a: 1}
     outlineColor: {r: 0.8553459, g: 0, b: 0, a: 1}
+  - key: DannyOcean
+    font: {fileID: 11400000, guid: 7e9697c8b41f50e41a5a4cca595b0309, type: 2}
+    fontColor: {r: 0.025157154, g: 0.025157154, b: 0.025157154, a: 1}
+    outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  - key: BatonRouge
+    font: {fileID: 11400000, guid: 7e9697c8b41f50e41a5a4cca595b0309, type: 2}
+    fontColor: {r: 0.060779016, g: 0.42138356, b: 0, a: 1}
+    outlineColor: {r: 0.32704395, g: 0.19147287, b: 0, a: 1}
+  - key: Gleep
+    font: {fileID: 11400000, guid: 4fca2fa69cdc8614f9e449ec806ce358, type: 2}
+    fontColor: {r: 0.49001992, g: 1, b: 0.42452818, a: 1}
+    outlineColor: {r: 0.06289297, g: 0.040148657, b: 0.040148657, a: 1}
+  - key: Mamdani
+    font: {fileID: 11400000, guid: 7e9697c8b41f50e41a5a4cca595b0309, type: 2}
+    fontColor: {r: 0.012360981, g: 0.1384916, b: 0.78616345, a: 1}
+    outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  - key: Sliwa
+    font: {fileID: 11400000, guid: 7e9697c8b41f50e41a5a4cca595b0309, type: 2}
+    fontColor: {r: 0.78431374, g: 0.011764695, b: 0.04180388, a: 1}
+    outlineColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &7110345309068624495
 GameObject:
   m_ObjectHideFlags: 0

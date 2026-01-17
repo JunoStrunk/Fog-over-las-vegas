@@ -49,6 +49,7 @@ MonoBehaviour:
   _audioSource: {fileID: 958900995452272358}
   _bgmSource: {fileID: 4165037966846586544}
   NewYorkBGM: {fileID: 8300000, guid: d4b98ef681d5f9f4ea266f423b4c0eed, type: 3}
+  BuffaloBGM: {fileID: 8300000, guid: b3fdc4a001360ac4388cc78b670d927d, type: 3}
 --- !u!82 &958900995452272358
 AudioSource:
   m_ObjectHideFlags: 0

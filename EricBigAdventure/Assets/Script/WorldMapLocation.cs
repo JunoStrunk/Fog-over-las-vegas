@@ -12,9 +12,15 @@ public class WorldMapLocation : MonoBehaviour
             if (collision.GetComponent<CarMovement>() != null)
             {
                 if (collision.GetComponent<CarMovement>().dontTp)
+                {
                     return;
+                }
 
                 MuppetLineManager._Instance.ExitMapMode(WorldName);
+                if(WorldName == "Las Vegas" && StoryManager.Instance.GetProgress("Las Vegas") == 1)
+                {
+                    WorldName = "Vegas In Fog";
+                }
                 SceneManager.LoadScene(WorldName);
             }
     }

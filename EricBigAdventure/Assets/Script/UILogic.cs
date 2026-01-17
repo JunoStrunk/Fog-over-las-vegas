@@ -13,6 +13,7 @@ public class UILogic : MonoBehaviour
     private SubtitleStyles _Styler;
     private Dialogue _currentDialogue;
     private UnityEvent _dialogueFinishedCallback;
+    private PlayerMovement _playerMovement;
 
     [SerializeField] private TMP_Text _Subtitle;
 
@@ -20,6 +21,7 @@ public class UILogic : MonoBehaviour
     {
         _InteractionDriver = FindAnyObjectByType<InteractionDriver>();
         _Styler = GetComponent<SubtitleStyles>();
+        _playerMovement = FindAnyObjectByType<PlayerMovement>();
     }
 
 
@@ -54,6 +56,7 @@ public class UILogic : MonoBehaviour
     {
         _currentDialogue = dialogue;
         _dialogueFinishedCallback = callback;
+        _playerMovement.canMove = false;
         PlayLine();
     }
 
@@ -88,6 +91,7 @@ public class UILogic : MonoBehaviour
             }
 
             _Subtitle.text = "";
+            _playerMovement.canMove = true;
             _currentDialogue = null;
             _dialogueFinishedCallback = null;
         }

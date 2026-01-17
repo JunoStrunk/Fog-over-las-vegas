@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
+    path: Assets/Scenes/Real Scenes/New York.unity
+    guid: 966a4abe0ed6f7f45bd7aa9500a0697b
+  - enabled: 1
     path: Assets/Scenes/WorldMap.unity
     guid: 80f565ddb17c1c24eb370473ea863b43
   - enabled: 1
@@ -18,8 +21,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Real Scenes/Las Vegas.unity
     guid: f855bad76b5b5814bae8c8fb7c7d5bab
   - enabled: 1
-    path: Assets/Scenes/Real Scenes/New York.unity
-    guid: 966a4abe0ed6f7f45bd7aa9500a0697b
+    path: Assets/Scenes/Real Scenes/Baton Rouge.unity
+    guid: 421a68351c80c86479345a1c5528e5b4
+  - enabled: 1
+    path: Assets/Scenes/Real Scenes/Buffalo.unity
+    guid: f9c1357d680f138428c8c1e93fbd58ce
+  - enabled: 1
+    path: Assets/Scenes/Real Scenes/Roswell.unity
+    guid: 367a378a49af16349be8159aa8e934ec
+  - enabled: 1
+    path: Assets/Scenes/Real Scenes/Vegas In Fog.unity
+    guid: 87e31e418d7782749bd4511b860b7b2d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
