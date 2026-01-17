@@ -19,6 +19,7 @@ public class MuppetLineManager : MonoBehaviour
     public static MuppetLineManager _Instance;
     private Vector3 CarLastLoc;
     public String LastFired;
+    private bool firstTime;
 	public void EnterMapMode()
 	{
 		StartCoroutine(EnterMapModeRoutine());
@@ -32,7 +33,11 @@ public class MuppetLineManager : MonoBehaviour
 			yield return null;
 
 		Car = FindAnyObjectByType<CarMovement>().gameObject;
-
+        if (!firstTime)
+        {
+            Car.GetComponent<CarMovement>().dontTp = true;
+        }
+        firstTime = false;
 		Car.transform.position = CarLastLoc;
 		inMap = true;
 		LastLoggedPosition = Car.transform.position;
@@ -55,7 +60,7 @@ public class MuppetLineManager : MonoBehaviour
             LoggedPos = new List<Vector2>();
             LoggedRot = new List<Quaternion>();
             CarLastLoc = new Vector3(0, 0, -2);
-
+            firstTime = true;
 
 			EnterMapMode();
             DontDestroyOnLoad(gameObject);
@@ -97,7 +102,7 @@ public class MuppetLineManager : MonoBehaviour
         for (int i = 0; i < LoggedPos.Count; i++)
         {
 			GameObject currPoint = Instantiate(LinePrefab);
-            currPoint.transform.position = LoggedPos[i];
+            currPoint.transform.position = new Vector3(LoggedPos[i].x, LoggedPos[i].y,-1);
             currPoint.transform.rotation = LoggedRot[i];
         }
     }

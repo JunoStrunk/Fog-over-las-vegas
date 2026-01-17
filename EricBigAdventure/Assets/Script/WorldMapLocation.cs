@@ -9,21 +9,17 @@ public class WorldMapLocation : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!CannotFire)
-        {
             if (collision.GetComponent<CarMovement>() != null)
             {
+                if (collision.GetComponent<CarMovement>().dontTp)
+                    return;
+
                 MuppetLineManager._Instance.ExitMapMode(WorldName);
                 SceneManager.LoadScene(WorldName);
             }
-        }
-        
     }
     public void OnTriggerExit2D(Collider2D collision)
     {
-		if (collision.GetComponent<CarMovement>() != null)
-		{
-            CannotFire = false;
-		}
+        collision.GetComponent<CarMovement>().dontTp = false;
 	}
 }
