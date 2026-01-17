@@ -349,11 +349,11 @@ MonoBehaviour:
   - key: Gameplay
     font: {fileID: 11400000, guid: 7e9697c8b41f50e41a5a4cca595b0309, type: 2}
     fontColor: {r: 1, g: 1, b: 1, a: 1}
-    outlineColor: {r: 0, g: 0, b: 0, a: 1}
+    outlineColor: {r: 0.025157154, g: 0.01748343, b: 0.01748343, a: 1}
   - key: Eric
     font: {fileID: 11400000, guid: 7e9697c8b41f50e41a5a4cca595b0309, type: 2}
     fontColor: {r: 0.8050314, g: 0.52010894, b: 0.0683516, a: 1}
-    outlineColor: {r: 0, g: 0, b: 0, a: 1}
+    outlineColor: {r: 0.031446517, g: 0.028380975, b: 0.028380975, a: 1}
   - key: JoshAllen
     font: {fileID: 11400000, guid: 7e9697c8b41f50e41a5a4cca595b0309, type: 2}
     fontColor: {r: 0, g: 0.17580687, b: 0.8238993, a: 1}
