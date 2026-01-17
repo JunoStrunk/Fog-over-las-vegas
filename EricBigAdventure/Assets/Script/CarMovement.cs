@@ -12,6 +12,7 @@ public class CarMovement : MonoBehaviour
 
 	private Rigidbody2D _RB;
 	private SpriteRenderer _SpriteRenderer;
+	public bool dontTp;
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Start()
 	{
