@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager Instance { get; private set; }
 
     [SerializeField] private AudioClip NewYorkBGM;
+    [SerializeField] private AudioClip BuffaloBGM;
 
     private Dictionary<string, AudioClip> _BGMMap = new Dictionary<string, AudioClip>();
 
@@ -26,6 +27,7 @@ public class AudioManager : MonoBehaviour
 
 
         _BGMMap.Add("New York", NewYorkBGM);
+        _BGMMap.Add("Buffalo", BuffaloBGM);
 
         SceneManager.sceneLoaded += SetBGM;
     }

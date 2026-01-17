@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D _RB;
     private SpriteRenderer _SpriteRenderer;
+
+    public bool canMove = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -39,6 +41,6 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        _RB.MovePosition(transform.position + (moveVector * Time.fixedDeltaTime));
+        if (canMove) _RB.MovePosition(transform.position + (moveVector * Time.fixedDeltaTime));
     }
 }
