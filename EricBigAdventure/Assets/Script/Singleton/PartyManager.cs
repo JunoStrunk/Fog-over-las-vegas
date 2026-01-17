@@ -1,17 +1,29 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Android;
 using UnityEngine.SceneManagement;
 
 public class PartyManager : MonoBehaviour
 {
+    [System.Serializable]
+    struct SceneScaling
+    {
+        public string name;
+        public float min;
+        public float max;
+        public float lowBound;
+        public float highBound;
+    }
     public static PartyManager Instance { get; private set; }
 
     private HashSet<string> _Party = new HashSet<string>();
+    private Dictionary<string, SceneScaling> _ScaleMap = new Dictionary<string, SceneScaling>();
+    [SerializeField] private List<SceneScaling> _ScaleList;
 
     private GameObject _currentFollowTarget;
 
-    [SerializeField] private PartyFollower _JoshAllen;
-    [SerializeField] private PartyFollower _Gleep;
+    [SerializeField] private GameObject _JoshAllen;
+    [SerializeField] private GameObject _Gleep;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     void Awake()
@@ -26,6 +38,12 @@ public class PartyManager : MonoBehaviour
 
         // Otherwise, set this object as the instance and prevent it from being destroyed on scene load
         Instance = this;
+
+        foreach(SceneScaling scaling in _ScaleList)
+        {
+            _ScaleMap.Add(scaling.name, scaling);
+        }
+
         DontDestroyOnLoad(this.gameObject);
     }
 
@@ -37,11 +55,23 @@ public class PartyManager : MonoBehaviour
             foreach(string partyMember in _Party)
             {
                 CreatePartyFollower(ResolvePartyMember(partyMember));
-            }            
+            }
+            
+            if(_ScaleMap.ContainsKey(scene.name))
+            {
+                SceneScaling scale = _ScaleMap[scene.name]; 
+                foreach(DistanceScale scaler in FindObjectsByType<DistanceScale>(FindObjectsSortMode.None))
+                {
+                    scaler.minScale = scale.min;
+                    scaler.maxScale = scale.max;
+                    scaler.lowBound = scale.lowBound;
+                    scaler.highBound = scale.highBound;
+                }
+            }
         }
     }
 
-    public void CreatePartyFollower(PartyFollower follower)
+    public void CreatePartyFollower(GameObject follower)
     {
         GameObject newFollower = Instantiate(follower).gameObject;
         newFollower.transform.position = _currentFollowTarget.transform.position;
@@ -55,9 +85,9 @@ public class PartyManager : MonoBehaviour
         CreatePartyFollower(ResolvePartyMember(newMember));
     }
 
-    private PartyFollower ResolvePartyMember(string memberAlias)
+    private GameObject ResolvePartyMember(string memberAlias)
     {
-        PartyFollower newMember = _Gleep;
+        GameObject newMember = _Gleep;
         switch (memberAlias)
         {
             case "Gleep":

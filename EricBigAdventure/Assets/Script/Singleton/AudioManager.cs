@@ -37,9 +37,12 @@ public class AudioManager : MonoBehaviour
 
     private void SetBGM(Scene scene, LoadSceneMode mode)
     {
-        _bgmSource.Pause();
-        _bgmSource.clip = GetSceneBGM(scene.name);
-        _bgmSource.Play();
+        if (_BGMMap.ContainsKey(scene.name))
+        {
+            _bgmSource.Pause();
+            _bgmSource.clip = GetSceneBGM(scene.name);
+            _bgmSource.Play();
+        }
     }
 
     private AudioClip GetSceneBGM(string sceneName)

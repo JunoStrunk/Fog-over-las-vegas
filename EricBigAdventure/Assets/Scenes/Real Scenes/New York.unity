@@ -1204,6 +1204,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5522744235837207648, guid: c550a547cf6afc74bb99354cd23fb5d7, type: 3}
+      propertyPath: _ScaleList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522744235837207648, guid: c550a547cf6afc74bb99354cd23fb5d7, type: 3}
+      propertyPath: _ScaleList.Array.data[1].max
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522744235837207648, guid: c550a547cf6afc74bb99354cd23fb5d7, type: 3}
+      propertyPath: _ScaleList.Array.data[1].min
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522744235837207648, guid: c550a547cf6afc74bb99354cd23fb5d7, type: 3}
+      propertyPath: _ScaleList.Array.data[1].name
+      value: New York
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522744235837207648, guid: c550a547cf6afc74bb99354cd23fb5d7, type: 3}
+      propertyPath: _ScaleList.Array.data[1].lowBound
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5522744235837207648, guid: c550a547cf6afc74bb99354cd23fb5d7, type: 3}
+      propertyPath: _ScaleList.Array.data[1].highBound
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8236728412474790589, guid: c550a547cf6afc74bb99354cd23fb5d7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.44006
