@@ -123,11 +123,12 @@ MonoBehaviour:
   _FollowTarget: {fileID: 0}
   _Sprite: {fileID: 6258974932211199823}
   _SpriteRenderer: {fileID: 8109447652646922383}
-  followDistance: 3.3
+  followDistance: 2.7
   stopDistance: 1.5
   speed: 14
   _stepAfter: 0.33
   _rotationSize: 7
+  son: {fileID: 0}
 --- !u!1001 &3285033910375309085
 PrefabInstance:
   m_ObjectHideFlags: 0

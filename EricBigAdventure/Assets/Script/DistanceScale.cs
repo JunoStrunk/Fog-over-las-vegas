@@ -3,7 +3,7 @@ using UnityEngine;
 public class DistanceScale : MonoBehaviour
 {
     private GameObject _SpriteContainer;
-
+    private PartyFollower _Follower;
     [SerializeField]
     public float minScale = 0.9f;
 
@@ -16,6 +16,10 @@ public class DistanceScale : MonoBehaviour
     void Start()
     {
         _SpriteContainer = transform.GetChild(0).gameObject;
+        if(transform.GetComponentInParent<PartyFollower>() != null)
+        {
+            _Follower = transform.GetComponentInParent<PartyFollower>();
+        }
     }
 
     // Update is called once per frame
@@ -23,5 +27,9 @@ public class DistanceScale : MonoBehaviour
     {
         float scaleFactor = Mathf.Lerp(maxScale, minScale, ((transform.position.y - lowBound) / (highBound - lowBound)));
         _SpriteContainer.transform.localScale = Vector3.one * scaleFactor;
+        if(_Follower != null)
+        {
+            _Follower.SetScale(scaleFactor);
+        }
     }
 }

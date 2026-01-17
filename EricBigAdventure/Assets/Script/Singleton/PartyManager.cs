@@ -27,6 +27,9 @@ public class PartyManager : MonoBehaviour
 
     [SerializeField] private GameObject _JoshAllen;
     [SerializeField] private GameObject _Gleep;
+    [SerializeField] private GameObject _DannyOcean;
+    [SerializeField] private GameObject _Sliwa;
+    [SerializeField] private GameObject _BatonRouge;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     void Awake()
@@ -114,6 +117,16 @@ public class PartyManager : MonoBehaviour
 
         _partyMembers[newMember] = newFollower;
 
+        if (_ScaleMap.ContainsKey(SceneManager.GetActiveScene().name))
+        {
+            SceneScaling scale = _ScaleMap[SceneManager.GetActiveScene().name];
+            DistanceScale scaler = newFollower.GetComponentInChildren<DistanceScale>();
+            scaler.minScale = scale.min;
+            scaler.maxScale = scale.max;
+            scaler.lowBound = scale.lowBound;
+            scaler.highBound = scale.highBound;
+        }
+
         positioner.SetActive(false);
     }
 
@@ -128,6 +141,16 @@ public class PartyManager : MonoBehaviour
             case "JoshAllen":
                 newMember = _JoshAllen;
                 break;
+            case "Sliwa":
+                newMember = _Sliwa;
+                break;
+            case "BatonRouge":
+                newMember = _BatonRouge;
+                break;
+            case "DannyOcean":
+                newMember = _DannyOcean;
+                break;
+
             default:
                 break;
         }

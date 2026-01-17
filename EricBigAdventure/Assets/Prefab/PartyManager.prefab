@@ -62,3 +62,6 @@ MonoBehaviour:
     highBound: 0
   _JoshAllen: {fileID: 2255682322181531286, guid: 8dcc961a6978fe44fac960b83c5bb6b7, type: 3}
   _Gleep: {fileID: 2255682322181531286, guid: 3d6c964a96c96d24fa70bdf0e6193d0d, type: 3}
+  _DannyOcean: {fileID: 2255682322181531286, guid: 9be99a73d484f5c47b9a860dc4c82a43, type: 3}
+  _Sliwa: {fileID: 2255682322181531286, guid: e1974a9eef518c84ea5f171c5cb6006f, type: 3}
+  _BatonRouge: {fileID: 2255682322181531286, guid: 7eeb51fe0a628864e8f9c50028c40019, type: 3}
