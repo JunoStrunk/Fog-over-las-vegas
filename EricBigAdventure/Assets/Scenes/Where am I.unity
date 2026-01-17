@@ -494,14 +494,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 55236897269401253, guid: 6e776e5b714a2294b93aa4f5668a6d41, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 55236897269401253, guid: 6e776e5b714a2294b93aa4f5668a6d41, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 109152166088885535, guid: 6e776e5b714a2294b93aa4f5668a6d41, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.71999
@@ -542,80 +534,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 510824757365348216, guid: 6e776e5b714a2294b93aa4f5668a6d41, type: 3}
-      propertyPath: m_Size.x
-      value: 3.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 510824757365348216, guid: 6e776e5b714a2294b93aa4f5668a6d41, type: 3}
-      propertyPath: m_Size.y
-      value: 4.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 510824757365348216, guid: 6e776e5b714a2294b93aa4f5668a6d41, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 74e6ee34fa919494490634362884374e, type: 3}
-    - target: {fileID: 510824757365348216, guid: 6e776e5b714a2294b93aa4f5668a6d41, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2756366448977480894, guid: 6e776e5b714a2294b93aa4f5668a6d41, type: 3}
       propertyPath: m_Name
       value: Eric
       objectReference: {fileID: 0}
-    - target: {fileID: 3646755843470625518, guid: 6e776e5b714a2294b93aa4f5668a6d41, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 74e6ee34fa919494490634362884374e, type: 3}
-    - target: {fileID: 3646755843470625518, guid: 6e776e5b714a2294b93aa4f5668a6d41, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5314360403317027580, guid: 6e776e5b714a2294b93aa4f5668a6d41, type: 3}
-      propertyPath: maxScale
-      value: 1.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 5314360403317027580, guid: 6e776e5b714a2294b93aa4f5668a6d41, type: 3}
-      propertyPath: minScale
-      value: 0.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 6850522871561053088, guid: 6e776e5b714a2294b93aa4f5668a6d41, type: 3}
-      propertyPath: m_Name
-      value: Sprites
-      objectReference: {fileID: 0}
-    - target: {fileID: 7811684717420852735, guid: 6e776e5b714a2294b93aa4f5668a6d41, type: 3}
-      propertyPath: m_Size.x
-      value: 1.3381157
-      objectReference: {fileID: 0}
-    - target: {fileID: 7811684717420852735, guid: 6e776e5b714a2294b93aa4f5668a6d41, type: 3}
-      propertyPath: m_Size.y
-      value: 0.41385877
-      objectReference: {fileID: 0}
-    - target: {fileID: 7811684717420852735, guid: 6e776e5b714a2294b93aa4f5668a6d41, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.0005477369
-      objectReference: {fileID: 0}
-    - target: {fileID: 7811684717420852735, guid: 6e776e5b714a2294b93aa4f5668a6d41, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.8536683
-      objectReference: {fileID: 0}
-    - target: {fileID: 8409012398501237387, guid: 6e776e5b714a2294b93aa4f5668a6d41, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8409012398501237387, guid: 6e776e5b714a2294b93aa4f5668a6d41, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8722448234834637988, guid: 6e776e5b714a2294b93aa4f5668a6d41, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8722448234834637988, guid: 6e776e5b714a2294b93aa4f5668a6d41, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 510824757365348216, guid: 6e776e5b714a2294b93aa4f5668a6d41, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

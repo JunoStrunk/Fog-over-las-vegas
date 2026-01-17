@@ -96,7 +96,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.04212743, y: -1.3551008}
+  m_Offset: {x: -0.0005477369, y: -0.8536683}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -106,7 +106,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.2527653, y: 0.6770227}
+  m_Size: {x: 1.3381157, y: 0.41385877}
   m_EdgeRadius: 0
 --- !u!114 &5236324145460176810
 MonoBehaviour:
@@ -132,6 +132,14 @@ PrefabInstance:
     - target: {fileID: 140976198836645255, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_Name
       value: DistanceScale
+      objectReference: {fileID: 0}
+    - target: {fileID: 1960598987007160311, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1960598987007160311, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 1960598987007160311, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_LocalPosition.x
@@ -172,6 +180,14 @@ PrefabInstance:
     - target: {fileID: 1960598987007160311, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6709311501589378962, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 74e6ee34fa919494490634362884374e, type: 3}
+    - target: {fileID: 6709311501589378962, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
