@@ -1,18 +1,28 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PartyFollower : MonoBehaviour
 {
     [SerializeField] private GameObject _FollowTarget;
     [SerializeField] private GameObject _Sprite;
-    public float followDistance;
-    public float stopDistance;
-    public float speed;
+    [SerializeField] private SpriteRenderer _SpriteRenderer;
+
+    public float followDistance = 2.0f;
+    public float stopDistance = 1.0f;
+    public float speed = 10.0f;
+
+    public float _stepAfter = 0.33f;
+    private float _stepTimer;
+    public float _rotationSize = 7.0f;
+
+    private Rigidbody2D _RB;
 
     private bool _following;
+    private Vector3 _moveDirection;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        _RB = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -22,15 +32,48 @@ public class PartyFollower : MonoBehaviour
 
         if (_following)
         {
-            if(distance < stopDistance)
+            if (distance < stopDistance)
             {
                 _following = false;
+                _stepTimer = 0.0f;
+                _Sprite.transform.eulerAngles = Vector3.zero;
                 return;
             }
-        }
-        if( > followDistance)
-        {
 
+            else
+            {
+                _moveDirection = (_FollowTarget.transform.position - transform.position).normalized;
+                _stepTimer += Time.deltaTime;
+                if (_stepTimer > _stepAfter)
+                {
+                    _Sprite.transform.eulerAngles = new Vector3(0.0f, 0.0f, _Sprite.transform.eulerAngles.z * -1);
+                    _stepTimer = 0.0f;
+                }
+            }
+        }
+
+        else
+        {
+            _following = distance > followDistance;
+            if(_following)
+            {
+                _Sprite.transform.eulerAngles = new Vector3(0.0f, 0.0f, _rotationSize);
+            }
+        }
+
+    }
+
+    void FixedUpdate()
+    {
+        if(_following)
+        {
+            Vector3 moveVector = _moveDirection * speed;
+            if (moveVector.x != 0)
+            {
+                _SpriteRenderer.flipX = moveVector.x < 0;
+            }
+
+            _RB.MovePosition(transform.position + (moveVector * Time.fixedDeltaTime));
         }
     }
 

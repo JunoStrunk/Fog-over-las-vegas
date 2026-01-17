@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a8f69237b93dee48802d64dda8ad0a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DistanceScale
-  minScale: 0.9
-  maxScale: 1.1
+  minScale: 0.85
+  maxScale: 1.15
 --- !u!1 &5967585879763332482
 GameObject:
   m_ObjectHideFlags: 0
