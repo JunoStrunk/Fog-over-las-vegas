@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEditor.Profiling.Memory.Experimental;
 using UnityEngine;
 using UnityEngine.Android;
 using UnityEngine.SceneManagement;
@@ -19,6 +20,8 @@ public class PartyManager : MonoBehaviour
     private HashSet<string> _Party = new HashSet<string>();
     private Dictionary<string, SceneScaling> _ScaleMap = new Dictionary<string, SceneScaling>();
     [SerializeField] private List<SceneScaling> _ScaleList;
+
+    private Dictionary<string, GameObject> _partyMembers = new Dictionary<string, GameObject>();
 
     private GameObject _currentFollowTarget;
 
@@ -49,12 +52,14 @@ public class PartyManager : MonoBehaviour
 
     void InitializeParty(Scene scene, LoadSceneMode mode)
     {
+        _partyMembers.Clear();
+
         if (scene.name != "WorldMap")
         {
             _currentFollowTarget = FindAnyObjectByType<PlayerMovement>().gameObject;
             foreach(string partyMember in _Party)
             {
-                CreatePartyFollower(ResolvePartyMember(partyMember));
+                _partyMembers[partyMember] = CreatePartyFollower(ResolvePartyMember(partyMember));
             }
             
             if(_ScaleMap.ContainsKey(scene.name))
@@ -71,12 +76,19 @@ public class PartyManager : MonoBehaviour
         }
     }
 
-    public void CreatePartyFollower(GameObject follower)
+    public GameObject CreatePartyFollower(GameObject follower)
     {
         GameObject newFollower = Instantiate(follower).gameObject;
         newFollower.transform.position = _currentFollowTarget.transform.position;
         newFollower.GetComponent<PartyFollower>().setFollowTarget(_currentFollowTarget);
+
+        if(_currentFollowTarget.GetComponent<PartyFollower>() != null)
+        {
+            _currentFollowTarget.GetComponent<PartyFollower>().son = newFollower.GetComponent<PartyFollower>();
+        }
+
         _currentFollowTarget = newFollower;
+        return newFollower;
     }
 
     public void AddPartyMember(string newMember)
@@ -92,7 +104,16 @@ public class PartyManager : MonoBehaviour
         GameObject newFollower = Instantiate(follower).gameObject;
         newFollower.transform.position = positioner.transform.position;
         newFollower.GetComponent<PartyFollower>().setFollowTarget(_currentFollowTarget);
+
+        if (_currentFollowTarget.GetComponent<PartyFollower>() != null)
+        {
+            _currentFollowTarget.GetComponent<PartyFollower>().son = newFollower.GetComponent<PartyFollower>();
+        }
+
         _currentFollowTarget = newFollower;
+
+        _partyMembers[newMember] = newFollower;
+
         positioner.SetActive(false);
     }
 
@@ -116,5 +137,18 @@ public class PartyManager : MonoBehaviour
     public bool HasPartyMember(string alias)
     {
         return _Party.Contains(alias);
+    }
+
+    public void RemovePartyMember(string alias)
+    {
+        _Party.Remove(alias);
+        GameObject toRemove = _partyMembers[alias];
+
+        if (toRemove.GetComponent<PartyFollower>().son != null)
+        {
+            toRemove.GetComponent<PartyFollower>().son.setFollowTarget(toRemove.GetComponent<PartyFollower>()._FollowTarget);
+        }
+
+        toRemove.SetActive(false);
     }
 }

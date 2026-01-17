@@ -50,5 +50,15 @@ MonoBehaviour:
     max: 1.1
     lowBound: -4
     highBound: -2
+  - name: New York
+    min: 0.7
+    max: 1.1
+    lowBound: -4
+    highBound: 1
+  - name: Buffalo
+    min: 0.3
+    max: 1.1
+    lowBound: -4
+    highBound: 0
   _JoshAllen: {fileID: 2255682322181531286, guid: 8dcc961a6978fe44fac960b83c5bb6b7, type: 3}
   _Gleep: {fileID: 2255682322181531286, guid: 3d6c964a96c96d24fa70bdf0e6193d0d, type: 3}

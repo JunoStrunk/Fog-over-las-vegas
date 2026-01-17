@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 
 public class PartyFollower : MonoBehaviour
 {
-    [SerializeField] private GameObject _FollowTarget;
+    [SerializeField] public GameObject _FollowTarget;
     [SerializeField] private GameObject _Sprite;
     [SerializeField] private SpriteRenderer _SpriteRenderer;
 
@@ -19,6 +19,8 @@ public class PartyFollower : MonoBehaviour
 
     private bool _following;
     private Vector3 _moveDirection;
+
+    public PartyFollower son;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
