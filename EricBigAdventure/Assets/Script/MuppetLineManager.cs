@@ -25,7 +25,7 @@ public class MuppetLineManager : MonoBehaviour
 		StartCoroutine(EnterMapModeRoutine());
 	}
 
-	private IEnumerator EnterMapModeRoutine()
+    private IEnumerator EnterMapModeRoutine()
 	{
 		AsyncOperation loadOp = SceneManager.LoadSceneAsync("WorldMap");
 
@@ -62,12 +62,10 @@ public class MuppetLineManager : MonoBehaviour
             CarLastLoc = new Vector3(0, 0, -2);
             firstTime = true;
 
-			EnterMapMode();
             DontDestroyOnLoad(gameObject);
         }
         else
         {
-
             Destroy(this);
         }
     }

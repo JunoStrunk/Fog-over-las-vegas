@@ -76,7 +76,7 @@ public class UILogic : MonoBehaviour
 
             else
             {
-                StartCoroutine(LineDelay(3.0f));
+                StartCoroutine(LineDelay(0.3f));
             }
         }
 

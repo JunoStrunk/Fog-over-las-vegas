@@ -414,6 +414,97 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &861124452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 861124455}
+  - component: {fileID: 861124454}
+  - component: {fileID: 861124453}
+  m_Layer: 0
+  m_Name: Teleport
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &861124453
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861124452}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -8.575571, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 18.151142, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &861124454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861124452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b85c46ef08e6149b5f7e4d683ddcda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TestTP
+--- !u!4 &861124455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861124452}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.65762, y: -6.14, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &943448519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -673,6 +764,63 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1001 &1743190866
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2653052593161060602, guid: 1c853c1dfe91df54abc547911e105451, type: 3}
+      propertyPath: m_Name
+      value: MuppetLineManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6137302799170036889, guid: 1c853c1dfe91df54abc547911e105451, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.93687
+      objectReference: {fileID: 0}
+    - target: {fileID: 6137302799170036889, guid: 1c853c1dfe91df54abc547911e105451, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.8844
+      objectReference: {fileID: 0}
+    - target: {fileID: 6137302799170036889, guid: 1c853c1dfe91df54abc547911e105451, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6137302799170036889, guid: 1c853c1dfe91df54abc547911e105451, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6137302799170036889, guid: 1c853c1dfe91df54abc547911e105451, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6137302799170036889, guid: 1c853c1dfe91df54abc547911e105451, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6137302799170036889, guid: 1c853c1dfe91df54abc547911e105451, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6137302799170036889, guid: 1c853c1dfe91df54abc547911e105451, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6137302799170036889, guid: 1c853c1dfe91df54abc547911e105451, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6137302799170036889, guid: 1c853c1dfe91df54abc547911e105451, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1c853c1dfe91df54abc547911e105451, type: 3}
 --- !u!1 &1933508199
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,7 +958,7 @@ GameObject:
   - component: {fileID: 2120735069}
   - component: {fileID: 2120735071}
   m_Layer: 0
-  m_Name: Interactable Test
+  m_Name: Bills Fan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -900,16 +1048,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2120735068}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0624d79777529354488281f826a50e2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 34d3c978bb723814688e98146e9878ac, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InteractChump
+  m_EditorClassIdentifier: Assembly-CSharp::BillsFan
   _Dialogues:
-  - dialogue: {fileID: 11400000, guid: 50956301b9fd256488ae90fbae0ef820, type: 2}
+  - dialogue: {fileID: 11400000, guid: 7cb6e70faaf976543bc8d69ea5ca2b18, type: 2}
     callback:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 2120735071}
-          m_TargetAssemblyTypeName: InteractChump, Assembly-CSharp
+          m_TargetAssemblyTypeName: BillsFan, Assembly-CSharp
           m_MethodName: IncrementStory
           m_Mode: 1
           m_Arguments:
@@ -920,13 +1068,29 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - dialogue: {fileID: 11400000, guid: 95f55e0d34c0faf479eb296991c45588, type: 2}
+  - dialogue: {fileID: 11400000, guid: 6d0c5238a1489db4e8d83749be835e6c, type: 2}
     callback:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 2120735071}
-          m_TargetAssemblyTypeName: InteractChump, Assembly-CSharp
-          m_MethodName: BirthOfGleep
+          m_TargetAssemblyTypeName: BillsFan, Assembly-CSharp
+          m_MethodName: NoProgress
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - dialogue: {fileID: 11400000, guid: 9814ead42081bf54bbadc5689f337699, type: 2}
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2120735071}
+          m_TargetAssemblyTypeName: BillsFan, Assembly-CSharp
+          m_MethodName: DeathOfFan
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1047,7 +1211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8520335636741629957, guid: 2b7cdc7af9d9a0548ad9dfa7a646fcad, type: 3}
       propertyPath: interactText
-      value: Chump
+      value: Talk
       objectReference: {fileID: 0}
     - target: {fileID: 8520335636741629957, guid: 2b7cdc7af9d9a0548ad9dfa7a646fcad, type: 3}
       propertyPath: _InteractionCallback.m_PersistentCalls.m_Calls.Array.size
@@ -1071,7 +1235,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8520335636741629957, guid: 2b7cdc7af9d9a0548ad9dfa7a646fcad, type: 3}
       propertyPath: _InteractionCallback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: InteractChump, Assembly-CSharp
+      value: BillsFan, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8520335636741629957, guid: 2b7cdc7af9d9a0548ad9dfa7a646fcad, type: 3}
       propertyPath: _InteractionCallback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1290,3 +1454,5 @@ SceneRoots:
   - {fileID: 6825146598838178670}
   - {fileID: 8691650647897547116}
   - {fileID: 7495970622656443610}
+  - {fileID: 1743190866}
+  - {fileID: 861124455}

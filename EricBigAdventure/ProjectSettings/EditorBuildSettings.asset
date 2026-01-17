@@ -14,6 +14,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Where am I.unity
     guid: 1438da6971077774d8aa856d34d03053
+  - enabled: 1
+    path: Assets/Scenes/Real Scenes/Las Vegas.unity
+    guid: f855bad76b5b5814bae8c8fb7c7d5bab
+  - enabled: 1
+    path: Assets/Scenes/Real Scenes/New York.unity
+    guid: 966a4abe0ed6f7f45bd7aa9500a0697b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
