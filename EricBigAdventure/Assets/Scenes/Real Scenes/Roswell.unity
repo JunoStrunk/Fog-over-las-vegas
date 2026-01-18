@@ -1411,7 +1411,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  GleepFanfare: {fileID: 0}
+  GleepFanfare: {fileID: 8300000, guid: 1c1adceaed12ae9438012b52837ae507, type: 3}
 --- !u!4 &1874364633 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4918219474501688847, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
