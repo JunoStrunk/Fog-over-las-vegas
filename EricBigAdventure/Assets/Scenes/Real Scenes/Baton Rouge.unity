@@ -1094,6 +1094,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   _Fanboat: {fileID: 1611234848}
+  jawHarp: {fileID: 8300000, guid: eb982361f6e14874ca6492ccd45b58cb, type: 3}
   JAandGleep: {fileID: 772821038}
 --- !u!4 &821323074 stripped
 Transform:

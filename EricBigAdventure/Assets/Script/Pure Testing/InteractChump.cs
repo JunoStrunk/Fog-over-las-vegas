@@ -37,9 +37,4 @@ public class InteractChump : MonoBehaviour
         StoryManager.Instance.SetProgress("NewYork", 1);
         _interactable.Reenable();
     }
-
-    public void BirthOfGleep()
-    {
-        PartyManager.Instance.AddPartyMember("Gleep");
-    }
 }

@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations.Rigging;
+using UnityEngine.InputSystem;
 
 public class StoryManager : MonoBehaviour
 {
@@ -20,6 +22,7 @@ public class StoryManager : MonoBehaviour
         // Otherwise, set this object as the instance and prevent it from being destroyed on scene load
         Instance = this;
         DontDestroyOnLoad(this.gameObject);
+        InputSystem.actions.FindAction("Quit").performed += OnQuit;
     }
 
     public uint GetProgress(string name)
@@ -35,5 +38,9 @@ public class StoryManager : MonoBehaviour
     public void SetProgress(string name, uint value)
     {
         _storyProgress[name] = value;
+    }
+    private void OnQuit(InputAction.CallbackContext context)
+    {
+        Application.Quit();
     }
 }

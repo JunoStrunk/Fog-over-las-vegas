@@ -23,7 +23,7 @@ public class GleepDeathEvents : MonoBehaviour
 
 	public void End()
 	{
-		PartyManager.Instance.AddPartyMemberAtGameObject("JoshAllen", jA);
+		PartyManager.Instance.AddPartyMemberAtGameObject("JoshAllen", jA, null);
 		StartCoroutine(MomentOfSilence());
 	}
 

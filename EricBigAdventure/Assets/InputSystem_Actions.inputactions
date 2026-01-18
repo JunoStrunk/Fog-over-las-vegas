@@ -10,7 +10,7 @@
                     "name": "Move",
                     "type": "Value",
                     "id": "351f2ccd-1f9f-44bf-9bec-d62ac5c5f408",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "Digital",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -85,6 +85,15 @@
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Quit",
+                    "type": "Button",
+                    "id": "3a6835bd-1052-4f9a-9fc5-ccb2fd930f11",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Hold",
                     "initialStateCheck": false
                 }
             ],
@@ -416,6 +425,17 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "63acd977-6c5f-497b-91a3-90adeaa8d185",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Quit",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

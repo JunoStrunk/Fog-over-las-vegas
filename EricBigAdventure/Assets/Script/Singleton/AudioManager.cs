@@ -79,4 +79,9 @@ public class AudioManager : MonoBehaviour
     {
         return _BGMMap[sceneName];
     }
+    
+    public void PauseBGM()
+    {
+        _bgmSource.Pause();
+    }
 }

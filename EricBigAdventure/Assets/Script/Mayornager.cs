@@ -5,6 +5,7 @@ public class Mayornager : MonoBehaviour
     [SerializeField] Dialogue.DialogueEntry mamdaniDialogue;
     [SerializeField] Dialogue.DialogueEntry sliwaDialogue;
     [SerializeField] GameObject theGuys;
+    [SerializeField] AudioClip sliwaFanfare;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -43,6 +44,6 @@ public class Mayornager : MonoBehaviour
     public void DialogueEnding()
     {
         StoryManager.Instance.SetProgress("Voting", 3);
-        PartyManager.Instance.AddPartyMember("Sliwa");
+        PartyManager.Instance.AddPartyMember("Sliwa", sliwaFanfare);
     }
 }

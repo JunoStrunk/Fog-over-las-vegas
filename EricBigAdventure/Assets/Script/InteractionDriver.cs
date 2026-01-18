@@ -8,6 +8,8 @@ public class InteractionDriver : MonoBehaviour
     private string _interactionText;
     [SerializeField] private string _InteractKey;
     [SerializeField] private string _DefaultText;
+    [SerializeField] private SpriteRenderer parentSprite;
+    [SerializeField] private bool _rotateParent = false;
 
     private UILogic _UI;
     void Start()
@@ -47,9 +49,16 @@ public class InteractionDriver : MonoBehaviour
 
     public void OnInteract(InputAction.CallbackContext context)
     {
-        Debug.Log("belhhh");
         if(_currentTarget != null)
         {
+            if(_rotateParent)
+            {
+                
+                if(_currentTarget.transform.parent.position.x < transform.parent.parent.parent.position.x)
+                {
+                    parentSprite.flipX = true;
+                }
+            }
             _currentTarget.Interact();
         }
     }

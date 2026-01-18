@@ -880,6 +880,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   _Sprite: {fileID: 192235643}
+  JAFanfare: {fileID: 8300000, guid: a03a8440432c229429ce7b95f3de4b98, type: 3}
   speed: 15
 --- !u!4 &1751045436 stripped
 Transform:

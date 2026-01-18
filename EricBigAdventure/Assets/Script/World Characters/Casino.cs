@@ -22,6 +22,7 @@ public class Casino : MonoBehaviour
     {
         if (StoryManager.Instance.GetProgress("Las Vegas") == 0)
         {
+            AudioManager.Instance.PauseBGM();
             StoryManager.Instance.SetProgress("Las Vegas", 1);
             GameObject.FindAnyObjectByType<VideoManager>().StartVid();
         }

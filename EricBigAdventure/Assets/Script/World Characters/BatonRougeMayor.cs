@@ -8,6 +8,7 @@ public class BatonRougeMayor : MonoBehaviour
 
     [SerializeField] List<Dialogue.DialogueEntry> _Dialogues;
     [SerializeField] GameObject _Fanboat;
+    [SerializeField] AudioClip jawHarp;
 
     public Animator JAandGleep;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -63,7 +64,7 @@ public class BatonRougeMayor : MonoBehaviour
     public void RIPGleep()
     {
         StoryManager.Instance.SetProgress("BatonRouge", 2);
-        PartyManager.Instance.AddPartyMemberAtGameObject("BatonRouge", gameObject);
+        PartyManager.Instance.AddPartyMemberAtGameObject("BatonRouge", gameObject, jawHarp);
         _Fanboat.SetActive(false);
     }
 }
