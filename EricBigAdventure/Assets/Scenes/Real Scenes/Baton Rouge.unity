@@ -797,6 +797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   crowdNoise: {fileID: 8300000, guid: 3430de2b653820d4b94e60399470d71c, type: 3}
   jA: {fileID: 2103730940}
+  mayor: {fileID: 821323073}
 --- !u!95 &772821038
 Animator:
   serializedVersion: 7
@@ -1050,7 +1051,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 821323073}
           m_TargetAssemblyTypeName: BatonRougeMayor, Assembly-CSharp
-          m_MethodName: IncrementStory
+          m_MethodName: NoProgress
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1066,7 +1067,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 821323073}
           m_TargetAssemblyTypeName: BatonRougeMayor, Assembly-CSharp
-          m_MethodName: NoProgress
+          m_MethodName: DeathOfGleep
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1082,7 +1083,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 821323073}
           m_TargetAssemblyTypeName: BatonRougeMayor, Assembly-CSharp
-          m_MethodName: DeathOfGleep
+          m_MethodName: RIPGleep
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1093,6 +1094,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   _Fanboat: {fileID: 1611234848}
+  jawHarp: {fileID: 8300000, guid: eb982361f6e14874ca6492ccd45b58cb, type: 3}
   JAandGleep: {fileID: 772821038}
 --- !u!4 &821323074 stripped
 Transform:
@@ -2019,10 +2021,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6450222017529750195, guid: 774ca101be76cc34388f4fed8906855a, type: 3}
-      propertyPath: VotingBGM
-      value: 
-      objectReference: {fileID: 8300000, guid: ee4ebeab092bfcc449659a4e09352408, type: 3}
     - target: {fileID: 7285896423750400661, guid: 774ca101be76cc34388f4fed8906855a, type: 3}
       propertyPath: m_Name
       value: AudioManager

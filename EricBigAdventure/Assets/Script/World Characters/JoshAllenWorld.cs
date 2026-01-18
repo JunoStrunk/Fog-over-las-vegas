@@ -13,6 +13,8 @@ public class JoshAllenWorld : MonoBehaviour
 
     [SerializeField] private SpriteRenderer _Sprite;
 
+    [SerializeField] private AudioClip JAFanfare;
+
     private Vector3 _targetPosition;
     private bool _moving;
     public float speed = 15f;
@@ -20,8 +22,6 @@ public class JoshAllenWorld : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        StoryManager.Instance.SetProgress("Las Vegas", 1);
-
         _interactable = GetComponentInChildren<Interactable>();
 
         if (StoryManager.Instance.GetProgress("Buffalo") > 0 && StoryManager.Instance.GetProgress("Las Vegas") > 0)
@@ -99,7 +99,7 @@ public class JoshAllenWorld : MonoBehaviour
     public void RecruitJA()
     {
         StoryManager.Instance.SetProgress("Buffalo", 2);
-        PartyManager.Instance.AddPartyMemberAtGameObject("JoshAllen", gameObject);
+        PartyManager.Instance.AddPartyMemberAtGameObject("JoshAllen", gameObject, JAFanfare);
         _moving = true;
     }
 }

@@ -50,7 +50,7 @@ MonoBehaviour:
   _bgmSource: {fileID: 4165037966846586544}
   NewYorkBGM: {fileID: 8300000, guid: d01537c3029425d469bd4810027fb55c, type: 3}
   BuffaloBGM: {fileID: 8300000, guid: b3fdc4a001360ac4388cc78b670d927d, type: 3}
-  BatonRougeBGM: {fileID: 8300000, guid: 94a117f44b5a7f5439fa577a0202c208, type: 3}
+  BatonRougeBGM: {fileID: 8300000, guid: 6b49619d1583bca4a93f4d35f0688c66, type: 3}
   HappyRoswellBGM: {fileID: 8300000, guid: 05759e3d06449cd4b96d1cf48c921ac2, type: 3}
   PenLandBGM: {fileID: 8300000, guid: 5a4c4cb1ae34a7b49aad844266735c2c, type: 3}
   SadRoswellBGM: {fileID: 8300000, guid: d5a44ea00db721246bb157ae386f536b, type: 3}

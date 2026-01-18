@@ -130,7 +130,7 @@ MonoBehaviour:
   Parry: {fileID: 21300000, guid: 0843115980c321a478a01dcde26f399b, type: 3}
   followDistance: 3
   stopDistance: 1.5
-  speed: 10
+  speed: 8
   _stepAfter: 0.33
   _rotationSize: 7
   son: {fileID: 0}
@@ -188,15 +188,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2324475279344024785, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.2690625
+      value: 0.2130087
       objectReference: {fileID: 0}
     - target: {fileID: 2324475279344024785, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.275
+      value: 0.22000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2324475279344024785, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 2324475279344024785, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.03
       objectReference: {fileID: 0}
     - target: {fileID: 5681148711863746824, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_LocalScale.x

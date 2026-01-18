@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 066e5a3b693f4cb4995d57f8d0f3efef, type: 3}
   m_Name: Gleep2
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  currentIndex: 0
+  currentIndex: 1
   lines:
-  - text: 2
-    audio: {fileID: 0}
+  - text: 
+    audio: {fileID: 8300000, guid: 6e5971cb902967b4f882c083670fa0c2, type: 3}
     style: Gleep
     animation: 
+  - text: Yeah, I can get you a balloon
+    audio: {fileID: 8300000, guid: 96505fb89f1997c4a86921c765ec9fb4, type: 3}
+    style: Eric
+    animation: talk

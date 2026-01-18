@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   currentIndex: 0
   lines:
-  - text: 1
-    audio: {fileID: 0}
-    style: 
-    animation: 
+  - text: I don't have a writing utensil, it'd be impossible to vote...
+    audio: {fileID: 8300000, guid: 73fa697f9491c0f47939d40f0ac41373, type: 3}
+    style: Eric
+    animation: talk

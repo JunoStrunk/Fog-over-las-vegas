@@ -7,6 +7,7 @@ public class DannyOceanWorld : MonoBehaviour
     private Interactable _interactable;
 
     [SerializeField] List<Dialogue.DialogueEntry> _Dialogues;
+    private AudioClip DannyFanfare;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -25,19 +26,25 @@ public class DannyOceanWorld : MonoBehaviour
 
     public void DannyBehavior()
     {
-        if (StoryManager.Instance.GetProgress("Las Vegas") == 0)
+        if (StoryManager.Instance.GetProgress("Las Vegas") == 0 && StoryManager.Instance.GetProgress("Danny") == 0)
         {
             _Dialogues[0].Play();
         }
 
-        else if (StoryManager.Instance.GetProgress("Las Vegas") == 2)
+        else if (StoryManager.Instance.GetProgress("Las Vegas") == 0 && StoryManager.Instance.GetProgress("Danny") > 0)
         {
             _Dialogues[1].Play();
+        }
+
+        else if (StoryManager.Instance.GetProgress("Las Vegas") == 2)
+        {
+            _Dialogues[2].Play();
         }
     }
 
     public void NoProgress()
     {
+        StoryManager.Instance.SetProgress("Danny", 1);
         _interactable.Reenable();
     }
 
@@ -45,6 +52,6 @@ public class DannyOceanWorld : MonoBehaviour
     {
         StoryManager.Instance.SetProgress("Las Vegas", 3);
 
-        PartyManager.Instance.AddPartyMemberAtGameObject("DannyOcean", gameObject);
+        PartyManager.Instance.AddPartyMemberAtGameObject("DannyOcean", gameObject, DannyFanfare);
     }
 }

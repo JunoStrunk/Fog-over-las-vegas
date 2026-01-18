@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97d1254d74145e54f82557ffb9a34e2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  speed: 10
+  speed: 8
   MyAnimator: {fileID: 4137343219237822292}
   canMove: 1
   isTalking: 0
@@ -216,6 +216,14 @@ PrefabInstance:
       propertyPath: _InteractKey
       value: E
       objectReference: {fileID: 0}
+    - target: {fileID: 7082256205243499267, guid: 9fe5bbc8847a38d498741784f3b2ec06, type: 3}
+      propertyPath: parentSprite
+      value: 
+      objectReference: {fileID: 3646755843470625518}
+    - target: {fileID: 7082256205243499267, guid: 9fe5bbc8847a38d498741784f3b2ec06, type: 3}
+      propertyPath: _rotateParent
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -286,6 +294,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2324475279344024785, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5681148711863746824, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.52055347
+      objectReference: {fileID: 0}
+    - target: {fileID: 5681148711863746824, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.51458555
+      objectReference: {fileID: 0}
+    - target: {fileID: 5681148711863746824, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5681148711863746824, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.16
+      objectReference: {fileID: 0}
     - target: {fileID: 6709311501589378962, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -341,6 +369,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!212 &3646755843470625518 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6709311501589378962, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
+  m_PrefabInstance: {fileID: 8036570581103607164}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8409012398501237387 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1960598987007160311, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}

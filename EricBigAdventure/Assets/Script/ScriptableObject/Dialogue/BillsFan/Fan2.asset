@@ -14,11 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   currentIndex: 0
   lines:
-  - text: I love Josh Allen!
-    audio: {fileID: 0}
-    style: 
-    animation: 
-  - text: Always Josh allen with this kid
-    audio: {fileID: 0}
+  - text: You'll never meet a Buffalo Bills player
+    audio: {fileID: 8300000, guid: b82c9b680bb965f4abaaf618310d3464, type: 3}
     style: Eric
-    animation: 
+    animation: talk

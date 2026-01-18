@@ -8,6 +8,7 @@ public class BatonRougeMayor : MonoBehaviour
 
     [SerializeField] List<Dialogue.DialogueEntry> _Dialogues;
     [SerializeField] GameObject _Fanboat;
+    [SerializeField] AudioClip jawHarp;
 
     public Animator JAandGleep;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -25,19 +26,14 @@ public class BatonRougeMayor : MonoBehaviour
     {
         if(StoryManager.Instance.GetProgress("BatonRouge") == 0)
         {
-            _Dialogues[0].Play();
-        }
-
-        else if (StoryManager.Instance.GetProgress("BatonRouge") == 1)
-        {
             if (PartyManager.Instance.HasPartyMember("JoshAllen") && PartyManager.Instance.HasPartyMember("Gleep"))
-            { 
-                _Dialogues[2].Play();
+            {
+                _Dialogues[1].Play();
             }
 
             else
             {
-                _Dialogues[1].Play();
+                _Dialogues[0].Play();
             }
         }
     }
@@ -56,13 +52,19 @@ public class BatonRougeMayor : MonoBehaviour
     public void DeathOfGleep()
     {
         PartyManager.Instance.RemovePartyMember("Gleep");
-
-        StoryManager.Instance.SetProgress("BatonRouge", 2);
-        PartyManager.Instance.AddPartyMemberAtGameObject("BatonRouge", gameObject);
-        _Fanboat.SetActive(false);
-
 		//TODO : WTF is going on with Josh Allen and Gleep
 		PartyManager.Instance.RemovePartyMember("JoshAllen");
 		JAandGleep.SetTrigger("Saviour");
+    }
+
+    public void PlayEndingDialogue()
+    {
+        _Dialogues[2].Play();
+    }
+    public void RIPGleep()
+    {
+        StoryManager.Instance.SetProgress("BatonRouge", 2);
+        PartyManager.Instance.AddPartyMemberAtGameObject("BatonRouge", gameObject, jawHarp);
+        _Fanboat.SetActive(false);
     }
 }

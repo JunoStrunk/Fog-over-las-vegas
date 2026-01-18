@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   currentIndex: 0
   lines:
-  - text: 3
-    audio: {fileID: 0}
+  - text: '*cajun sounds*'
+    audio: {fileID: 8300000, guid: 87622f799778bbd4f93209a6301909f6, type: 3}
     style: BatonRouge
     animation: 
+  - text: Sweet! Maybe I can use this airboat for something...
+    audio: {fileID: 8300000, guid: ffc926b26a764524a9108561382030fe, type: 3}
+    style: Eric
+    animation: talk

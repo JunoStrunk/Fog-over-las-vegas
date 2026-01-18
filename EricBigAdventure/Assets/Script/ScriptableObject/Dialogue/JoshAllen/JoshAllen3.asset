@@ -14,7 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   currentIndex: 0
   lines:
-  - text: 3
-    audio: {fileID: 0}
+  - text: Hey, I bought this golden football in Vegas. If I give it to you, will
+      you help me unlock Los Angeles?
+    audio: {fileID: 8300000, guid: b94f28a0ca5049144ac844295eddb615, type: 3}
+    style: Eric
+    animation: talk
+  - text: Yes! I love football so much, I'm gonna win a super bowl one day
+    audio: {fileID: 8300000, guid: 4d67d701c83ae594096131755286d63f, type: 3}
     style: JoshAllen
     animation: 
+  - text: Sure, bud!
+    audio: {fileID: 8300000, guid: 21aaacf6ed914354e86915a30c1ba070, type: 3}
+    style: Eric
+    animation: hand

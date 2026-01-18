@@ -12,13 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 066e5a3b693f4cb4995d57f8d0f3efef, type: 3}
   m_Name: Fan4
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  currentIndex: 0
+  currentIndex: 2
   lines:
-  - text: Hello son. It's me Josh Allen from the Buffalo Bills
-    audio: {fileID: 0}
-    style: JoshAllen
-    animation: 
-  - text: Hooray!!
-    audio: {fileID: 0}
-    style: 
-    animation: 
+  - text: You'll never meet a Buffalo Bills player...
+    audio: {fileID: 8300000, guid: b82c9b680bb965f4abaaf618310d3464, type: 3}
+    style: Eric
+    animation: talk

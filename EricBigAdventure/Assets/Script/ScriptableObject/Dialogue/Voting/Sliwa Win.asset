@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   currentIndex: 0
   lines:
-  - text: Sliwa
-    audio: {fileID: 0}
+  - text: Quit glazin' me!
+    audio: {fileID: 8300000, guid: 295352aadf8f3c54a8ac0e824b0c6ea0, type: 3}
     style: Sliwa
     animation: 

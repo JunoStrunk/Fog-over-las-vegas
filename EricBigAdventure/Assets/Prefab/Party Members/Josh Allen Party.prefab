@@ -128,9 +128,9 @@ MonoBehaviour:
   WalkV: {fileID: 21300000, guid: b21ec6d77cab1d046abcc37b91ddeb35, type: 3}
   Roll: {fileID: 21300000, guid: 1ce1828976531a64a8338b049db4841e, type: 3}
   Parry: {fileID: 21300000, guid: 8af98769a323a8a448aad05dfcacd32d, type: 3}
-  followDistance: 2.7
+  followDistance: 2.2
   stopDistance: 1.5
-  speed: 14
+  speed: 10
   _stepAfter: 0.33
   _rotationSize: 7
   son: {fileID: 0}

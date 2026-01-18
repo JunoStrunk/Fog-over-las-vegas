@@ -9,12 +9,17 @@ public class BillsFan : MonoBehaviour
     [SerializeField] List<Dialogue.DialogueEntry> _Dialogues;
 
     [SerializeField] private Sprite dead;
+    [SerializeField] private GameObject balloon;
+    private bool ballooning = false;
+    [SerializeField] private Sprite awestruck;
     private SpriteRenderer _Spriter;
-
+    private Animator _Animator;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         _Spriter = GetComponent<SpriteRenderer>();
+        _Animator = GetComponent<Animator>();
+        _Animator.enabled = false;
 
         _interactable = GetComponentInChildren<Interactable>();
         if(PartyManager.Instance.HasPartyMember("JoshAllen") && StoryManager.Instance.GetProgress("Fan") > 0)
@@ -24,15 +29,17 @@ public class BillsFan : MonoBehaviour
 
         if(StoryManager.Instance.GetProgress("Fan") > 1)
         {
-            _Spriter.sprite = dead;
-            _interactable.interactText = "Mourn";
+            gameObject.SetActive(false);
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if(ballooning)
+        {
+            balloon.transform.position += (new Vector3(0, 1, 0) * 0.15f * Time.deltaTime);
+        }
     }
 
     public void ChumpBehavior()
@@ -77,6 +84,7 @@ public class BillsFan : MonoBehaviour
         StoryManager.Instance.SetProgress("Fan", 2);
 
         //Kill fan with football robot
+        _Animator.enabled = true;
         GetComponent<Animator>().SetTrigger("Kill");
 
         _interactable.interactText = "Mourn";
@@ -90,8 +98,26 @@ public class BillsFan : MonoBehaviour
 
     System.Collections.IEnumerator WaitToMourn()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
+
+        StoryManager.Instance.SetProgress("Fan", 2);
+
         _interactable.Reenable();
 
+    }
+
+    public void IstDasJoshAllen()
+    {
+        ballooning = true;
+        _Spriter.sprite = awestruck;
+        _Spriter.flipX = true;
+        StartCoroutine(BalloonWait());
+    }
+
+    System.Collections.IEnumerator BalloonWait()
+    {
+        yield return new WaitForSeconds(10.9f);
+        balloon.SetActive(false);
+        ballooning = false;
     }
 }

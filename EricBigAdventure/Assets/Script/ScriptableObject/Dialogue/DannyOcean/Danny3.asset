@@ -10,11 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 066e5a3b693f4cb4995d57f8d0f3efef, type: 3}
-  m_Name: Danny2
+  m_Name: Danny3
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   currentIndex: 0
   lines:
-  - text: I better not bother Mr. Ocean, I don't have a heist yet...
-    audio: {fileID: 8300000, guid: a42f1d7f6c91e1e44bc15739829a6ecc, type: 3}
+  - text: Hey Daniel Ocean, can you help me unlock Los Angeles?
+    audio: {fileID: 8300000, guid: a40be22dcc421014691b962b9e07ffcf, type: 3}
     style: Eric
     animation: talk
+  - text: Looks like you need one more. I'll help out
+    audio: {fileID: 8300000, guid: d6e8df90bcbc16e4299a04ce6034fac2, type: 3}
+    style: DannyOcean
+    animation: 

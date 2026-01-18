@@ -12,9 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 066e5a3b693f4cb4995d57f8d0f3efef, type: 3}
   m_Name: Gleep1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  currentIndex: 0
+  currentIndex: 3
   lines:
-  - text: 1
-    audio: {fileID: 0}
+  - text: Gleep, my old chum! How are ya?
+    audio: {fileID: 8300000, guid: 52cdcce1a6e6bad4f8723692da38ac39, type: 3}
+    style: Eric
+    animation: talk
+  - text: 
+    audio: {fileID: 8300000, guid: 6e5971cb902967b4f882c083670fa0c2, type: 3}
     style: Gleep
     animation: 
+  - text: I can see that! I'm glad you're doing well.
+    audio: {fileID: 8300000, guid: e25084ad0604ce34da1184eb9ad04476, type: 3}
+    style: Eric
+    animation: talk

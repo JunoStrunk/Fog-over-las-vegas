@@ -17,6 +17,6 @@ public class HeistScript : MonoBehaviour
 
     public void ReAddDanny()
     {
-		PartyManager.Instance.AddPartyMemberAtGameObject("DannyOcean", danny);
+		PartyManager.Instance.AddPartyMemberAtGameObject("DannyOcean", danny, null);
 	}
 }

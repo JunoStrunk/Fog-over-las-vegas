@@ -14,11 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   currentIndex: 0
   lines:
-  - text: Hello son. It's me Josh Allen from the Buffalo Bills
-    audio: {fileID: 0}
+  - text: O mein Gott!! Ist das JOSHALLEN!!
+    audio: {fileID: 8300000, guid: 5df7bedca583f5844ba54e08fc627812, type: 3}
+    style: 
+    animation: billsboy
+  - text: Yoo what up it's me Josh Allen! I love football! Go long!
+    audio: {fileID: 8300000, guid: 70e8989d4d643904887a4f91ba67d7ff, type: 3}
     style: JoshAllen
     animation: 
-  - text: Hooray!!
-    audio: {fileID: 0}
+  - text: '*suspicious noises*'
+    audio: {fileID: 8300000, guid: a0097c16345f70c4aa395953e347662f, type: 3}
+    style: Eric
+    animation: hand
+  - text: Yep, that's Josh Allen!
+    audio: {fileID: 8300000, guid: 086c92ad6f6602945bf38a4895a09027, type: 3}
+    style: Eric
+    animation: talk
+  - text: Shame you lost to das Broncos on January 17, 2026!
+    audio: {fileID: 8300000, guid: c21dccfae74bc764ab23f5d88f1be74a, type: 3}
     style: 
+    animation: 
+  - text: :(
+    audio: {fileID: 8300000, guid: d2d04dc80a97d2841b83325ad05d50d2, type: 3}
+    style: JoshAllen
     animation: 

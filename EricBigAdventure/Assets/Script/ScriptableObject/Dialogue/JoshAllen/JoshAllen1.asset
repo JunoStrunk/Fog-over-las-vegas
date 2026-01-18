@@ -14,7 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   currentIndex: 0
   lines:
-  - text: 1
-    audio: {fileID: 0}
+  - text: Hey I'm Josh Allen and I love football!! Go long!
+    audio: {fileID: 8300000, guid: 4a10e4a487613104a9113b7083456bf1, type: 3}
     style: JoshAllen
     animation: 
+  - text: Why are you in Buffalo, North Dakota?
+    audio: {fileID: 8300000, guid: 59bbb7090bbd0b446979841c9a4b1f46, type: 3}
+    style: Eric
+    animation: talk
+  - text: I got lost.
+    audio: {fileID: 8300000, guid: d6a68da610a38b444b0d3f0f2300bed6, type: 3}
+    style: JoshAllen
+    animation: 
+  - text: Neat-o!
+    audio: {fileID: 8300000, guid: 10949ed5ebbc3a04e8691c2c698ede33, type: 3}
+    style: Eric
+    animation: talk

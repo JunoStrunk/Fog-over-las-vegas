@@ -12,21 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 066e5a3b693f4cb4995d57f8d0f3efef, type: 3}
   m_Name: Fan1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  currentIndex: 0
+  currentIndex: 3
   lines:
-  - text: Nice balloon kid
-    audio: {fileID: 0}
-    style: Eric
-    animation: 
-  - text: I love josh Allen
-    audio: {fileID: 0}
+  - text: Mein Favoriteteam ist das BuffaloBills!
+    audio: {fileID: 8300000, guid: 63dc0ba9db4cc69408c3b9ed12de89ef, type: 3}
     style: 
     animation: 
-  - text: what about star of eric ballon advenutre
-    audio: {fileID: 0}
-    style: Eric
-    animation: 
-  - text: KYS
-    audio: {fileID: 0}
+  - text: I would love to meet one of their players
+    audio: {fileID: 8300000, guid: 30e0ee443e0b81743a621a27d8afbe16, type: 3}
     style: 
     animation: 
+  - text: Keep dreaming, bub.
+    audio: {fileID: 8300000, guid: 5736365b7c832d6479d5b8d574e79976, type: 3}
+    style: Eric
+    animation: talk

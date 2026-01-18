@@ -94,13 +94,17 @@ public class PartyManager : MonoBehaviour
         return newFollower;
     }
 
-    public void AddPartyMember(string newMember)
+    public void AddPartyMember(string newMember, AudioClip fanfare)
     {
         _Party.Add(newMember);
         _partyMembers[newMember] = CreatePartyFollower(ResolvePartyMember(newMember));
+        if(fanfare != null)
+        {
+            AudioManager.Instance.PlaySound(fanfare);
+        }
     }
 
-    public void AddPartyMemberAtGameObject(string newMember, GameObject positioner)
+    public void AddPartyMemberAtGameObject(string newMember, GameObject positioner, AudioClip fanfare)
     {
         _Party.Add(newMember);
         GameObject follower = ResolvePartyMember(newMember);
@@ -131,6 +135,11 @@ public class PartyManager : MonoBehaviour
         {
             HadGleepBefore = true;
 		}
+
+        if (fanfare != null)
+        {
+            AudioManager.Instance.PlaySound(fanfare);
+        }
 
         positioner.SetActive(false);
     }

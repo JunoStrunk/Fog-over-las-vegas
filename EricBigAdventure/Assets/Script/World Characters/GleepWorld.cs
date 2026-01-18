@@ -7,6 +7,7 @@ public class GleepWorld : MonoBehaviour
     private Interactable _interactable;
 
     [SerializeField] List<Dialogue.DialogueEntry> _Dialogues;
+    [SerializeField] private AudioClip GleepFanfare;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -47,6 +48,12 @@ public class GleepWorld : MonoBehaviour
     public void IncrementStory()
     {
         StoryManager.Instance.SetProgress("Roswell", 1);
+
+        if (StoryManager.Instance.GetProgress("Roswell") > 0 && StoryManager.Instance.GetProgress("Fan") > 1)
+        {
+            _interactable.interactText = "Reunite";
+        }
+
         _interactable.Reenable();
     }
 
@@ -58,6 +65,6 @@ public class GleepWorld : MonoBehaviour
     public void RecruitJA()
     {
         StoryManager.Instance.SetProgress("Roswell", 2);
-        PartyManager.Instance.AddPartyMemberAtGameObject("Gleep", gameObject);
+        PartyManager.Instance.AddPartyMemberAtGameObject("Gleep", gameObject, GleepFanfare);
     }
 }
