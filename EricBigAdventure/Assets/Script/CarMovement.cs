@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -49,4 +50,16 @@ public class CarMovement : MonoBehaviour
 		_RB.AddForce(moveVector,ForceMode2D.Impulse);
 		//_RB.MovePosition(transform.position + (moveVector * Time.fixedDeltaTime));
 	}
+
+	public AudioClip Passport;
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Border")
+		{
+			GetComponent<AudioSource>().PlayOneShot(Passport);
+		}
+    }
+
+
 }
+
