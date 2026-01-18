@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 066e5a3b693f4cb4995d57f8d0f3efef, type: 3}
   m_Name: BatonROuge1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  currentIndex: 0
+  currentIndex: 1
   lines:
   - text: 1
     audio: {fileID: 0}
     style: BatonRouge
-    animation: 
+    animation: phone
