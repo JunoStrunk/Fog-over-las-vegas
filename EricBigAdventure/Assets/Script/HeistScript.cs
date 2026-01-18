@@ -8,7 +8,7 @@ public class HeistScript : MonoBehaviour
 
     private void Start()
     {
-		//PartyManager.Instance.AddPartyMember("DannyOcean");
+		PartyManager.Instance.AddPartyMember("DannyOcean");
 	}
     public void PenSteal()
     {
