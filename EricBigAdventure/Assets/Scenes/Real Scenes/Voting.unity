@@ -225,6 +225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 097d7a7f37179f643b659e2f50bdc186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SliwaVote
+  voteConfirm: {fileID: 8300000, guid: 6432d487821fa264c95304b4c3e401df, type: 3}
 --- !u!1 &176079400
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,6 +1180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a69b00fcad743a1489851542fa1b5f44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MamdaniVote
+  voteConfirm: {fileID: 8300000, guid: 6432d487821fa264c95304b4c3e401df, type: 3}
 --- !u!1 &1586914443
 GameObject:
   m_ObjectHideFlags: 0
@@ -1889,6 +1891,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4165037966846586544, guid: 774ca101be76cc34388f4fed8906855a, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4572742902598964193, guid: 774ca101be76cc34388f4fed8906855a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.44006
