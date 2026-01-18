@@ -8,6 +8,8 @@ public class BatonRougeMayor : MonoBehaviour
 
     [SerializeField] List<Dialogue.DialogueEntry> _Dialogues;
     [SerializeField] GameObject _Fanboat;
+
+    public Animator JAandGleep;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -59,7 +61,8 @@ public class BatonRougeMayor : MonoBehaviour
         PartyManager.Instance.AddPartyMemberAtGameObject("BatonRouge", gameObject);
         _Fanboat.SetActive(false);
 
-        //TODO : WTF is going on with Josh Allen and Gleep
-
+		//TODO : WTF is going on with Josh Allen and Gleep
+		PartyManager.Instance.RemovePartyMember("JoshAllen");
+		JAandGleep.SetTrigger("Saviour");
     }
 }

@@ -272,7 +272,7 @@ Camera:
   m_CorrespondingSourceObject: {fileID: 4326277804970405065, guid: 81ae820ceb94b254ca519673a2f0e697, type: 3}
   m_PrefabInstance: {fileID: 1303998271107910901}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &593289586
+--- !u!1001 &597112809
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -280,132 +280,55 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3396545992401350219, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
-      propertyPath: m_Size.y
-      value: 1.6563329
-      objectReference: {fileID: 0}
-    - target: {fileID: 3396545992401350219, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.7228144
-      objectReference: {fileID: 0}
-    - target: {fileID: 3662102386504550563, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
-      propertyPath: interactText
-      value: Talk
-      objectReference: {fileID: 0}
-    - target: {fileID: 3662102386504550563, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
-      propertyPath: _InteractionCallback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 593289588}
-    - target: {fileID: 3662102386504550563, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
-      propertyPath: _InteractionCallback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: DannyBehavior
-      objectReference: {fileID: 0}
-    - target: {fileID: 3662102386504550563, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
-      propertyPath: _InteractionCallback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: DannyOceanWorld, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 4465219321147022651, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
-      propertyPath: m_Name
-      value: Danny Ocean World
-      objectReference: {fileID: 0}
-    - target: {fileID: 4918219474501688847, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+    - target: {fileID: 5581220467950744815, guid: 4077a53242a78884cadd4f5e9c95b744, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.22
+      value: -5.637619
       objectReference: {fileID: 0}
-    - target: {fileID: 4918219474501688847, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+    - target: {fileID: 5581220467950744815, guid: 4077a53242a78884cadd4f5e9c95b744, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.4130199
+      value: -1.1033889
       objectReference: {fileID: 0}
-    - target: {fileID: 4918219474501688847, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+    - target: {fileID: 5581220467950744815, guid: 4077a53242a78884cadd4f5e9c95b744, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4918219474501688847, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+    - target: {fileID: 5581220467950744815, guid: 4077a53242a78884cadd4f5e9c95b744, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4918219474501688847, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+    - target: {fileID: 5581220467950744815, guid: 4077a53242a78884cadd4f5e9c95b744, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4918219474501688847, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+    - target: {fileID: 5581220467950744815, guid: 4077a53242a78884cadd4f5e9c95b744, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4918219474501688847, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+    - target: {fileID: 5581220467950744815, guid: 4077a53242a78884cadd4f5e9c95b744, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4918219474501688847, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+    - target: {fileID: 5581220467950744815, guid: 4077a53242a78884cadd4f5e9c95b744, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4918219474501688847, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+    - target: {fileID: 5581220467950744815, guid: 4077a53242a78884cadd4f5e9c95b744, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4918219474501688847, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+    - target: {fileID: 5581220467950744815, guid: 4077a53242a78884cadd4f5e9c95b744, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833407897556479063, guid: 4077a53242a78884cadd4f5e9c95b744, type: 3}
+      propertyPath: m_Name
+      value: Danny Ocean World
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4465219321147022651, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 593289588}
-  m_SourcePrefab: {fileID: 100100000, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
---- !u!1 &593289587 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4465219321147022651, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
-  m_PrefabInstance: {fileID: 593289586}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &593289588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 593289587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfe853eb43c54a748b4336dfb05e2798, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DannyOceanWorld
-  _Dialogues:
-  - dialogue: {fileID: 11400000, guid: f0c3f4304055c0c438a204b2e913237b, type: 2}
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 593289588}
-          m_TargetAssemblyTypeName: DannyOceanWorld, Assembly-CSharp
-          m_MethodName: NoProgress
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - dialogue: {fileID: 11400000, guid: 163e1552183fcc241a2218c502f27e38, type: 2}
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 593289588}
-          m_TargetAssemblyTypeName: DannyOceanWorld, Assembly-CSharp
-          m_MethodName: DannyInParty
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4077a53242a78884cadd4f5e9c95b744, type: 3}
 --- !u!1001 &680187137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -490,7 +413,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7046227242014926687, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1798,6 +1722,6 @@ SceneRoots:
   - {fileID: 3025468902777194725}
   - {fileID: 284317328}
   - {fileID: 680187137}
-  - {fileID: 593289586}
   - {fileID: 1308472086}
   - {fileID: 2090107327}
+  - {fileID: 597112809}

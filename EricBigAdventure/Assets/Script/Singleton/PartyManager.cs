@@ -97,7 +97,7 @@ public class PartyManager : MonoBehaviour
     public void AddPartyMember(string newMember)
     {
         _Party.Add(newMember);
-        CreatePartyFollower(ResolvePartyMember(newMember));
+        _partyMembers[newMember] = CreatePartyFollower(ResolvePartyMember(newMember));
     }
 
     public void AddPartyMemberAtGameObject(string newMember, GameObject positioner)
@@ -169,8 +169,8 @@ public class PartyManager : MonoBehaviour
 
     public void RemovePartyMember(string alias)
     {
-        _Party.Remove(alias);
         GameObject toRemove = _partyMembers[alias];
+        _Party.Remove(alias);
 
         if (toRemove.GetComponent<PartyFollower>().son != null)
         {
