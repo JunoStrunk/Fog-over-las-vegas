@@ -29,11 +29,13 @@ public class WorldMapLocation : MonoBehaviour
                     }
                 }
 
-                MuppetLineManager._Instance.ExitMapMode(WorldName);
-                if(WorldName == "Las Vegas" && StoryManager.Instance.GetProgress("Las Vegas") == 1)
-                {
-                    WorldName = "Vegas In Fog";
-                }
+
+			    if (WorldName == "Las Vegas" && StoryManager.Instance.GetProgress("Las Vegas") == 1)
+			    {
+				    WorldName = "Vegas In Fog";
+			    }
+			    MuppetLineManager._Instance.ExitMapMode(WorldName);
+
 
 				SceneManager.LoadScene(WorldName);
             }
