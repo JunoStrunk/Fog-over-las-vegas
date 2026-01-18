@@ -647,6 +647,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   speed: 3
+  _SpriteRenderer: {fileID: 0}
+  _Fanboat: {fileID: 21300000, guid: ab122ae3fe5fee340b66230758c7424a, type: 3}
   dontTp: 0
 --- !u!212 &684512689
 SpriteRenderer:
