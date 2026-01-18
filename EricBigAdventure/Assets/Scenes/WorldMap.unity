@@ -1104,7 +1104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   speed: 3
   _SpriteRenderer: {fileID: 0}
-  _Fanboat: {fileID: 21300000, guid: ab122ae3fe5fee340b66230758c7424a, type: 3}
+  _Fanboat: {fileID: 21300000, guid: 428c6a820c343c9498c69ccda807bd15, type: 3}
   dontTp: 0
   Passport: {fileID: 8300000, guid: 4fcbb8367e16b5e4f8c4653ac116cf07, type: 3}
 --- !u!212 &684512689
