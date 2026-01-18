@@ -16,11 +16,6 @@ public class WorldMapLocation : MonoBehaviour
                     return;
                 }
 
-                MuppetLineManager._Instance.ExitMapMode(WorldName);
-                if(WorldName == "Las Vegas" && StoryManager.Instance.GetProgress("Las Vegas") == 1)
-                {
-                    WorldName = "Vegas In Fog";
-                }
                 if(WorldName == "Los Angeles")
                 {
                     if(StoryManager.Instance.GetProgress("Voting") == 3)
@@ -33,6 +28,13 @@ public class WorldMapLocation : MonoBehaviour
                         return;
                     }
                 }
+
+                MuppetLineManager._Instance.ExitMapMode(WorldName);
+                if(WorldName == "Las Vegas" && StoryManager.Instance.GetProgress("Las Vegas") == 1)
+                {
+                    WorldName = "Vegas In Fog";
+                }
+
 				SceneManager.LoadScene(WorldName);
             }
     }
