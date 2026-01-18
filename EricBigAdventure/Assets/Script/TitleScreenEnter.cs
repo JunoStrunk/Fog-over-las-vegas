@@ -12,6 +12,9 @@ public class TitleScreenEnter : MonoBehaviour
 
     private void StartNextScene(InputAction.CallbackContext context)
     {
-        SceneManager.LoadScene("PhoneCall");
+        if(SceneManager.GetActiveScene().name == "TitleScreen")
+        {
+			SceneManager.LoadScene("PhoneCall");
+		}
 	}
 }
