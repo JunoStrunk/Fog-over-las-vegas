@@ -25,14 +25,15 @@ public class WorldMapLocation : MonoBehaviour
                 {
                     if(StoryManager.Instance.GetProgress("Voting") == 3)
                     {
-				    	SceneManager.LoadScene("LalaLand");
+                        WorldName = "LalaLand";
 				    }
                     else
                     {
-                    AudioManager.Instance.PlaySound(ericNeedsMoreMayors);
+                        AudioManager.Instance.PlaySound(ericNeedsMoreMayors);
+                        return;
                     }
                 }
-                SceneManager.LoadScene(WorldName);
+				SceneManager.LoadScene(WorldName);
             }
     }
     public void OnTriggerExit2D(Collider2D collision)

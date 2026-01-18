@@ -152,6 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   WorldName: Los Angeles
   CannotFire: 0
+  ericNeedsMoreMayors: {fileID: 8300000, guid: 3094d731ea4bc3742896162c8c73c87e, type: 3}
 --- !u!58 &280801880
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -295,6 +296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   WorldName: New York
   CannotFire: 0
+  ericNeedsMoreMayors: {fileID: 0}
 --- !u!58 &295403853
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -438,6 +440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   WorldName: Roswell
   CannotFire: 0
+  ericNeedsMoreMayors: {fileID: 0}
 --- !u!58 &372333292
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1362,6 +1365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   WorldName: Baton Rouge
   CannotFire: 0
+  ericNeedsMoreMayors: {fileID: 0}
 --- !u!58 &1284960944
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1684,6 +1688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   WorldName: Las Vegas
   CannotFire: 0
+  ericNeedsMoreMayors: {fileID: 0}
 --- !u!58 &1560068257
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2291,6 +2296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   WorldName: Buffalo
   CannotFire: 0
+  ericNeedsMoreMayors: {fileID: 0}
 --- !u!58 &1824548198
 CircleCollider2D:
   m_ObjectHideFlags: 0
