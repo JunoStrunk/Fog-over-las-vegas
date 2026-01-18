@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VotingBooth
   _Dialogues:
-  - dialogue: {fileID: 0}
+  - dialogue: {fileID: 11400000, guid: 9647dc42d75c85f49bc93815c17f1a5e, type: 2}
     callback:
       m_PersistentCalls:
         m_Calls:
@@ -225,7 +225,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - dialogue: {fileID: 0}
+  - dialogue: {fileID: 11400000, guid: 695ce52337e91a64fa52deb69d115d0a, type: 2}
     callback:
       m_PersistentCalls:
         m_Calls:
@@ -881,6 +881,84 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &1595333563
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1595333565}
+  - component: {fileID: 1595333564}
+  m_Layer: 0
+  m_Name: Mayornager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1595333564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595333563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2f3d08ed01e6df43a3a467b65078dfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Mayornager
+  mamdaniDialogue:
+    dialogue: {fileID: 11400000, guid: 3a6ad2780144da0468e426da07a1634e, type: 2}
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1595333564}
+          m_TargetAssemblyTypeName: Mayornager, Assembly-CSharp
+          m_MethodName: DialogueEnding
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  sliwaDialogue:
+    dialogue: {fileID: 11400000, guid: b3d93e61f0b9b444787e3a6316d6fb0d, type: 2}
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1595333564}
+          m_TargetAssemblyTypeName: Mayornager, Assembly-CSharp
+          m_MethodName: DialogueEnding
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!4 &1595333565
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595333563}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.9258, y: -0.5711, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1743190866
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1489,3 +1567,4 @@ SceneRoots:
   - {fileID: 1743190866}
   - {fileID: 861124455}
   - {fileID: 110155907}
+  - {fileID: 1595333565}

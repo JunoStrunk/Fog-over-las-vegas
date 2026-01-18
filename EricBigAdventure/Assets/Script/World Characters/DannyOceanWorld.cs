@@ -12,7 +12,7 @@ public class DannyOceanWorld : MonoBehaviour
     {
         _interactable = GetComponentInChildren<Interactable>();
 
-        if (StoryManager.Instance.GetProgress("Las Vegas") == 1)
+        if (StoryManager.Instance.GetProgress("Las Vegas") == 2)
         {
             _interactable.interactText = "Recruit";
         }

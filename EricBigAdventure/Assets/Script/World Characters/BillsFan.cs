@@ -63,6 +63,7 @@ public class BillsFan : MonoBehaviour
     public void DeathOfFan()
     {
         StoryManager.Instance.SetProgress("Fan", 2);
+        gameObject.SetActive(false);
         //TODO : Kill fan with football robot
     }
 }
