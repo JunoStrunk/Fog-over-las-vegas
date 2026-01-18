@@ -41,6 +41,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Real Scenes/Voting.unity
     guid: d5a868a203185c54d8ed2b00c61ce67c
+  - enabled: 1
+    path: Assets/Scenes/Real Scenes/PhoneCall.unity
+    guid: d7230c46dbee8b8468cbdae47c6ec455
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
