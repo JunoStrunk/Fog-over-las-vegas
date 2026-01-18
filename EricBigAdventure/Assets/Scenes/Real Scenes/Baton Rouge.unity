@@ -2019,6 +2019,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6450222017529750195, guid: 774ca101be76cc34388f4fed8906855a, type: 3}
+      propertyPath: VotingBGM
+      value: 
+      objectReference: {fileID: 8300000, guid: ee4ebeab092bfcc449659a4e09352408, type: 3}
     - target: {fileID: 7285896423750400661, guid: 774ca101be76cc34388f4fed8906855a, type: 3}
       propertyPath: m_Name
       value: AudioManager

@@ -10,8 +10,15 @@ public class AudioManager : MonoBehaviour
 
     [SerializeField] private AudioClip NewYorkBGM;
     [SerializeField] private AudioClip BuffaloBGM;
+	[SerializeField] private AudioClip BatonRougeBGM;
+	[SerializeField] private AudioClip HappyRoswellBGM;
+	[SerializeField] private AudioClip PenLandBGM;
+	[SerializeField] private AudioClip SadRoswellBGM;
+	[SerializeField] private AudioClip HappyVegasBGM;
+	[SerializeField] private AudioClip ScaryVegasBGM;
+	[SerializeField] private AudioClip VotingBGM;
 
-    private Dictionary<string, AudioClip> _BGMMap = new Dictionary<string, AudioClip>();
+	private Dictionary<string, AudioClip> _BGMMap = new Dictionary<string, AudioClip>();
 
     void Awake()
     {
@@ -28,8 +35,15 @@ public class AudioManager : MonoBehaviour
 
         _BGMMap.Add("New York", NewYorkBGM);
         _BGMMap.Add("Buffalo", BuffaloBGM);
+		_BGMMap.Add("Baton Rouge", BatonRougeBGM);
+		_BGMMap.Add("Happy Roswell", HappyRoswellBGM);
+		_BGMMap.Add("Sad Roswell", SadRoswellBGM);
+		_BGMMap.Add("Pen Land", PenLandBGM);
+		_BGMMap.Add("Las Vegas", HappyVegasBGM);
+		_BGMMap.Add("Vegas In Fog", ScaryVegasBGM);
+        _BGMMap.Add("Voting", VotingBGM);
 
-        SceneManager.sceneLoaded += SetBGM;
+		SceneManager.sceneLoaded += SetBGM;
     }
 
     public void PlaySound(AudioClip clip)
@@ -40,7 +54,21 @@ public class AudioManager : MonoBehaviour
     private void SetBGM(Scene scene, LoadSceneMode mode)
     {
         _bgmSource.Pause();
-        if (_BGMMap.ContainsKey(scene.name))
+        if(scene.name == "Roswell")
+        {
+            if(StoryManager.Instance.GetProgress("BatonRouge") < 2)
+            {
+				_bgmSource.clip = GetSceneBGM("Happy Roswell");
+				_bgmSource.Play();
+			}
+            else
+            {
+				_bgmSource.clip = GetSceneBGM("Sad Roswell");
+				_bgmSource.Play();
+			}
+
+        }
+        else if (_BGMMap.ContainsKey(scene.name))
         {
             _bgmSource.clip = GetSceneBGM(scene.name);
             _bgmSource.Play();
