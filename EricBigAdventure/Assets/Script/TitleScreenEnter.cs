@@ -12,6 +12,6 @@ public class TitleScreenEnter : MonoBehaviour
 
     private void StartNextScene(InputAction.CallbackContext context)
     {
-        SceneManager.LoadScene("WorldMap");
+        SceneManager.LoadScene("PhoneCall");
 	}
 }

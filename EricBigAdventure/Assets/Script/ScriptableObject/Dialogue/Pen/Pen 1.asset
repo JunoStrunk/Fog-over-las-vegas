@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   currentIndex: 0
   lines:
-  - text: 1
-    audio: {fileID: 0}
-    style: 
-    animation: 
+  - text: Woah! An alien artifact! I wonder if I can use this?
+    audio: {fileID: 8300000, guid: 3d6ad35ad1cc15143b59b225baccf490, type: 3}
+    style: Eric
+    animation: talk

@@ -15,7 +15,7 @@ MonoBehaviour:
   currentIndex: 0
   lines:
   - text: Thank you Eric, but I have to protect my city. Sliwa will go in my place
-    audio: {fileID: 0}
+    audio: {fileID: 8300000, guid: 1b97ac11e3a7ff84089cf9722b386a01, type: 3}
     style: Mamdani
     animation: 
   - text: BLAHHHH
