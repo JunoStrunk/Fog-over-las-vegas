@@ -4,10 +4,13 @@ using UnityEngine.SceneManagement;
 public class SliwaVote : MonoBehaviour
 {
     public AudioClip voteConfirm;
+    public Animator voting;
     public void Vote()
     {
         StoryManager.Instance.SetProgress("Voting", 2);
         AudioManager.Instance.PlaySound(voteConfirm);
-        SceneManager.LoadScene("New York");
+        voting.SetTrigger("Sliwa");
     }
+
+    
 }
