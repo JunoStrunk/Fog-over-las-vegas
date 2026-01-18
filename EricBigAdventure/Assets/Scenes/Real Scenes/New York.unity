@@ -1359,7 +1359,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   theGuys: {fileID: 860366992}
-  sliwaFanfare: {fileID: 0}
+  sliwaFanfare: {fileID: 8300000, guid: cec1deef647c0864cb9bea5ecf8e2c8a, type: 3}
 --- !u!4 &1595333565
 Transform:
   m_ObjectHideFlags: 0

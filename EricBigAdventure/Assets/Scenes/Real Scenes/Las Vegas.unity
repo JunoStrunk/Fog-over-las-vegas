@@ -285,6 +285,10 @@ PrefabInstance:
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 1897988098629436503, guid: 4077a53242a78884cadd4f5e9c95b744, type: 3}
+      propertyPath: DannyFanfare
+      value: 
+      objectReference: {fileID: 8300000, guid: ff7187c534e6983408e7ba0945d719eb, type: 3}
+    - target: {fileID: 1897988098629436503, guid: 4077a53242a78884cadd4f5e9c95b744, type: 3}
       propertyPath: _Dialogues.Array.size
       value: 3
       objectReference: {fileID: 0}

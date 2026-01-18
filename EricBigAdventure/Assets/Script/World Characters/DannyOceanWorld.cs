@@ -7,7 +7,7 @@ public class DannyOceanWorld : MonoBehaviour
     private Interactable _interactable;
 
     [SerializeField] List<Dialogue.DialogueEntry> _Dialogues;
-    private AudioClip DannyFanfare;
+    public AudioClip DannyFanfare;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
