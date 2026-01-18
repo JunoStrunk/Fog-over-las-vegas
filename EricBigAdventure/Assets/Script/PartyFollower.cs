@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 
 public class PartyFollower : MonoBehaviour
 {
-    [SerializeField] private GameObject _FollowTarget;
+    [SerializeField] public GameObject _FollowTarget;
     [SerializeField] private GameObject _Sprite;
     [SerializeField] private SpriteRenderer _SpriteRenderer;
 
@@ -19,6 +19,9 @@ public class PartyFollower : MonoBehaviour
 
     private bool _following;
     private Vector3 _moveDirection;
+    private float _scale = 1.0f;
+
+    public PartyFollower son;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -32,7 +35,7 @@ public class PartyFollower : MonoBehaviour
 
         if (_following)
         {
-            if (distance < stopDistance)
+            if (distance < stopDistance * _scale)
             {
                 _following = false;
                 _stepTimer = 0.0f;
@@ -54,7 +57,7 @@ public class PartyFollower : MonoBehaviour
 
         else
         {
-            _following = distance > followDistance;
+            _following = distance > followDistance * _scale;
             if(_following)
             {
                 _Sprite.transform.eulerAngles = new Vector3(0.0f, 0.0f, _rotationSize);
@@ -80,6 +83,11 @@ public class PartyFollower : MonoBehaviour
     public void setFollowTarget(GameObject target)
     {
         _FollowTarget = target;
+    }
+
+    public void SetScale(float scale)
+    {
+        _scale = scale; 
     }
 
 }

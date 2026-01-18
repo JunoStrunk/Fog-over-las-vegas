@@ -17,7 +17,7 @@ public class DannyOceanWorld : MonoBehaviour
             _interactable.interactText = "Recruit";
         }
 
-        if (StoryManager.Instance.GetProgress("Las Vegas") > 1)
+        if (StoryManager.Instance.GetProgress("Las Vegas") > 2)
         {
             gameObject.SetActive(false);
         }
