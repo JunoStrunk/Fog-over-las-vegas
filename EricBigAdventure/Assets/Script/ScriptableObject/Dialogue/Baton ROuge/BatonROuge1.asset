@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   currentIndex: 2
   lines:
-  - text: '*unintelligible*'
+  - text: '*cajun sounds*'
     audio: {fileID: 8300000, guid: d5db9f2451a65bd48aa5178f3f861a62, type: 3}
     style: BatonRouge
     animation: 
