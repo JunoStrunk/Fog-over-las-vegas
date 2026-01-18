@@ -17,7 +17,7 @@ MonoBehaviour:
   - text: O mein Gott!! Ist das JOSHALLEN!!
     audio: {fileID: 8300000, guid: 5df7bedca583f5844ba54e08fc627812, type: 3}
     style: 
-    animation: 
+    animation: billsboy
   - text: Yoo what up it's me Josh Allen! I love football! Go long!
     audio: {fileID: 8300000, guid: 70e8989d4d643904887a4f91ba67d7ff, type: 3}
     style: JoshAllen

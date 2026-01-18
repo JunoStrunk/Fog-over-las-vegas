@@ -82,6 +82,10 @@ public class UILogic : MonoBehaviour
                 {
                     _playerMovement.PhoneCall();
                 }
+                else if(_currentLine.animation == "billsboy")
+                {
+                    FindAnyObjectByType<BillsFan>().IstDasJoshAllen();
+                }
             }
 
             if (_currentLine.audio != null)

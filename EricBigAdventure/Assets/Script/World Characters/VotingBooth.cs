@@ -18,7 +18,7 @@ public class VotingBooth : MonoBehaviour
             _interactable.interactText = "Perform Civic Duty";
         }
 
-        if (StoryManager.Instance.GetProgress("Voting") > 1)
+        if (StoryManager.Instance.GetProgress("Voting") > 0)
         {
             gameObject.SetActive(false);
         }

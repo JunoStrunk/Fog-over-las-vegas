@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   currentIndex: 0
   lines:
-  - text: I found a new ballon, you want it?
+  - text: I found a new balloon, you want it?
     audio: {fileID: 8300000, guid: b30d98b06ab601944827445a755f791f, type: 3}
     style: Eric
     animation: talk

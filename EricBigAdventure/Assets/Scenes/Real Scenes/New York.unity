@@ -1359,6 +1359,7 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   theGuys: {fileID: 860366992}
+  sliwaFanfare: {fileID: 0}
 --- !u!4 &1595333565
 Transform:
   m_ObjectHideFlags: 0
@@ -1759,6 +1760,8 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   dead: {fileID: -278825890, guid: 4c044fc22eb503e4f89d6d80745b13f4, type: 3}
+  balloon: {fileID: 1105254941}
+  awestruck: {fileID: -387167844, guid: 4c044fc22eb503e4f89d6d80745b13f4, type: 3}
 --- !u!1001 &1303998271107910901
 PrefabInstance:
   m_ObjectHideFlags: 0
