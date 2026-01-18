@@ -1079,7 +1079,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ec2b0618f130b64cb76e223fbcde4e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pen
-  _animator: {fileID: 0}
+  _animator: {fileID: 1041956788}
   _Dialogues:
   - dialogue: {fileID: 11400000, guid: f76bdd0dd850b3642a092a367b3d6e41, type: 2}
     callback:
