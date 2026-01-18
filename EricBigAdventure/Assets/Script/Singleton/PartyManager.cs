@@ -30,6 +30,8 @@ public class PartyManager : MonoBehaviour
     [SerializeField] private GameObject _DannyOcean;
     [SerializeField] private GameObject _Sliwa;
     [SerializeField] private GameObject _BatonRouge;
+
+    public bool HadGleepBefore;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     void Awake()
