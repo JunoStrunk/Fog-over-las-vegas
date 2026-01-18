@@ -20,7 +20,7 @@ public class WorldMapLocation : MonoBehaviour
                 {
                     if(PartyManager.Instance.HasPartyMember("Sliwa"))
                     {
-                        WorldName = "LalaLand";
+                        WorldName = "LosAngeles";
 				    }
                     else
                     {
