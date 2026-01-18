@@ -37,5 +37,9 @@ public class Persistthesong : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(SceneManager.GetActiveScene().name == "WorldMap")
+        {
+            GetComponent<VideoPlayer>().Play();
+        }
     }
 }
