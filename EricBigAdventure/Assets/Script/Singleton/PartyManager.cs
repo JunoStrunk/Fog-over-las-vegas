@@ -1,7 +1,5 @@
 using System.Collections.Generic;
-using UnityEditor.Profiling.Memory.Experimental;
 using UnityEngine;
-using UnityEngine.Android;
 using UnityEngine.SceneManagement;
 
 public class PartyManager : MonoBehaviour
@@ -30,6 +28,8 @@ public class PartyManager : MonoBehaviour
     [SerializeField] private GameObject _DannyOcean;
     [SerializeField] private GameObject _Sliwa;
     [SerializeField] private GameObject _BatonRouge;
+
+    public bool HadGleepBefore;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     void Awake()
@@ -57,7 +57,7 @@ public class PartyManager : MonoBehaviour
     {
         _partyMembers.Clear();
 
-        if (scene.name != "WorldMap")
+        if (scene.name != "WorldMap" && scene.name != "Voting")
         {
             _currentFollowTarget = FindAnyObjectByType<PlayerMovement>().gameObject;
             foreach(string partyMember in _Party)
@@ -126,6 +126,11 @@ public class PartyManager : MonoBehaviour
             scaler.lowBound = scale.lowBound;
             scaler.highBound = scale.highBound;
         }
+
+        if(newMember == "Gleep")
+        {
+            HadGleepBefore = true;
+		}
 
         positioner.SetActive(false);
     }

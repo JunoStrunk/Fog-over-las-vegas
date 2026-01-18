@@ -23,8 +23,12 @@ public class Casino : MonoBehaviour
         if (StoryManager.Instance.GetProgress("Las Vegas") == 0)
         {
             StoryManager.Instance.SetProgress("Las Vegas", 1);
-            //TODO: Video
-            SceneManager.LoadScene("Vegas In Fog");
+            GameObject.FindAnyObjectByType<VideoManager>().StartVid();
         }
     }
+
+    public void FogVegas()
+    {
+		SceneManager.LoadScene("Vegas In Fog");
+	}
 }

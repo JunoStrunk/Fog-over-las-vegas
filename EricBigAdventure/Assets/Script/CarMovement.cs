@@ -36,7 +36,7 @@ public class CarMovement : MonoBehaviour
 			moveVector = new Vector3(_moveDirection.x, _moveDirection.y, 0.0f) * speed;
 			if (moveVector.x != 0)
 			{
-				_SpriteRenderer.flipX = moveVector.x < 0;
+				_SpriteRenderer.flipX = !(moveVector.x < 0);
 			}
 		}
 		_RB.AddForce(moveVector,ForceMode2D.Impulse);
