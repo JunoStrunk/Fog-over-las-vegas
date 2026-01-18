@@ -3,9 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class MamdaniVote : MonoBehaviour
 {
+    public AudioClip voteConfirm;
     public void Vote()
     {
         StoryManager.Instance.SetProgress("Voting", 1);
-        SceneManager.LoadScene("New York");
+		AudioManager.Instance.PlaySound(voteConfirm);
+		SceneManager.LoadScene("New York");
     }
 }
