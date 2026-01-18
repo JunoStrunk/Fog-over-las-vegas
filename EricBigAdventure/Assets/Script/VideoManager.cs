@@ -8,6 +8,7 @@ public class VideoManager : MonoBehaviour
     public Camera Video;
 
     public UnityEvent HandleEnd;
+    public UnityEvent HandleStart;
 
     private void Start()
     {
@@ -16,6 +17,7 @@ public class VideoManager : MonoBehaviour
 
     public void StartVid()
     {
+        HandleStart.Invoke();
         Player.enabled = false;
         Video.enabled = true;
 		GetComponent<VideoPlayer>().Play();
