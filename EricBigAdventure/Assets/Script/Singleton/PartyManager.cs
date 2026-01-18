@@ -129,6 +129,11 @@ public class PartyManager : MonoBehaviour
             scaler.highBound = scale.highBound;
         }
 
+        if(newMember == "Gleep")
+        {
+            HadGleepBefore = true;
+		}
+
         positioner.SetActive(false);
     }
 
