@@ -5,11 +5,14 @@ using UnityEngine;
 public class BillsFan : MonoBehaviour
 {
     private Interactable _interactable;
-
+    public AudioClip foxTheme;
     [SerializeField] List<Dialogue.DialogueEntry> _Dialogues;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        PartyManager.Instance.AddPartyMember("JoshAllen");
+
+
         _interactable = GetComponentInChildren<Interactable>();
         if(PartyManager.Instance.HasPartyMember("JoshAllen") && StoryManager.Instance.GetProgress("Fan") > 0)
         {
@@ -63,7 +66,13 @@ public class BillsFan : MonoBehaviour
     public void DeathOfFan()
     {
         StoryManager.Instance.SetProgress("Fan", 2);
-        gameObject.SetActive(false);
-        //TODO : Kill fan with football robot
+
+        //Kill fan with football robot
+        GetComponent<Animator>().SetTrigger("Kill");
+    }
+
+    public void Audio()
+    {
+        GetComponent<AudioSource>().PlayOneShot(foxTheme);
     }
 }
