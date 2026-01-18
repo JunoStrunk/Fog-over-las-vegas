@@ -123,6 +123,11 @@ MonoBehaviour:
   _FollowTarget: {fileID: 0}
   _Sprite: {fileID: 6258974932211199823}
   _SpriteRenderer: {fileID: 8109447652646922383}
+  Base: {fileID: 21300000, guid: 70f4334f097a40141975c56ab63f5fcc, type: 3}
+  WalkH: {fileID: 21300000, guid: 70f4334f097a40141975c56ab63f5fcc, type: 3}
+  WalkV: {fileID: 21300000, guid: b21ec6d77cab1d046abcc37b91ddeb35, type: 3}
+  Roll: {fileID: 21300000, guid: 1ce1828976531a64a8338b049db4841e, type: 3}
+  Parry: {fileID: 21300000, guid: 8af98769a323a8a448aad05dfcacd32d, type: 3}
   followDistance: 2.7
   stopDistance: 1.5
   speed: 14
@@ -183,15 +188,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2324475279344024785, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.2690625
+      value: 0.20852342
       objectReference: {fileID: 0}
     - target: {fileID: 2324475279344024785, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.275
+      value: 0.199375
+      objectReference: {fileID: 0}
+    - target: {fileID: 2324475279344024785, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0016876
       objectReference: {fileID: 0}
     - target: {fileID: 2324475279344024785, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 5681148711863746824, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_LocalPosition.x
@@ -212,7 +221,7 @@ PrefabInstance:
     - target: {fileID: 6709311501589378962, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7c0925876df85bb45a6deca9bdc1e3c4, type: 3}
+      objectReference: {fileID: 21300000, guid: b21ec6d77cab1d046abcc37b91ddeb35, type: 3}
     - target: {fileID: 6709311501589378962, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_SortingOrder
       value: 1

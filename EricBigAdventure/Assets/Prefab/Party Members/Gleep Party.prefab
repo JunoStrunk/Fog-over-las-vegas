@@ -123,11 +123,17 @@ MonoBehaviour:
   _FollowTarget: {fileID: 0}
   _Sprite: {fileID: 6258974932211199823}
   _SpriteRenderer: {fileID: 8109447652646922383}
+  Base: {fileID: -27166588, guid: 941eeb3db1d7e044d97812f4aadd5c3d, type: 3}
+  WalkH: {fileID: -27166588, guid: 941eeb3db1d7e044d97812f4aadd5c3d, type: 3}
+  WalkV: {fileID: -27166588, guid: 941eeb3db1d7e044d97812f4aadd5c3d, type: 3}
+  Roll: {fileID: 493263655, guid: 180117d96c9b26745b6f66900b8a7a61, type: 3}
+  Parry: {fileID: 36863965, guid: 180117d96c9b26745b6f66900b8a7a61, type: 3}
   followDistance: 2
   stopDistance: 1.5
   speed: 10
   _stepAfter: 0.15
   _rotationSize: 4
+  son: {fileID: 0}
 --- !u!1001 &3285033910375309085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -182,15 +188,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2324475279344024785, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.649544
+      value: 0.95807743
       objectReference: {fileID: 0}
     - target: {fileID: 2324475279344024785, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.80787766
       objectReference: {fileID: 0}
     - target: {fileID: 2324475279344024785, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.038
+      objectReference: {fileID: 0}
+    - target: {fileID: 2324475279344024785, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.379
+      value: -0.39
       objectReference: {fileID: 0}
     - target: {fileID: 5681148711863746824, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_LocalPosition.x
@@ -211,7 +221,7 @@ PrefabInstance:
     - target: {fileID: 6709311501589378962, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 78cd022e0a6b2894893ddf257f42f1ac, type: 3}
+      objectReference: {fileID: -27166588, guid: 941eeb3db1d7e044d97812f4aadd5c3d, type: 3}
     - target: {fileID: 6709311501589378962, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_SortingOrder
       value: 1

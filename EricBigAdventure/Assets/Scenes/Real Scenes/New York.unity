@@ -1352,6 +1352,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera + UI
       objectReference: {fileID: 0}
+    - target: {fileID: 8509489495360903181, guid: 81ae820ceb94b254ca519673a2f0e697, type: 3}
+      propertyPath: styles.Array.data[5].font
+      value: 
+      objectReference: {fileID: 11400000, guid: 4fca2fa69cdc8614f9e449ec806ce358, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

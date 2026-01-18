@@ -123,11 +123,17 @@ MonoBehaviour:
   _FollowTarget: {fileID: 0}
   _Sprite: {fileID: 6258974932211199823}
   _SpriteRenderer: {fileID: 8109447652646922383}
+  Base: {fileID: 0}
+  WalkH: {fileID: 0}
+  WalkV: {fileID: 0}
+  Roll: {fileID: 0}
+  Parry: {fileID: 0}
   followDistance: 3
   stopDistance: 1.5
   speed: 10
   _stepAfter: 0.33
   _rotationSize: 7
+  son: {fileID: 0}
 --- !u!1001 &3285033910375309085
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -210,23 +216,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6709311501589378962, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_Size.x
-      value: 6.67
+      value: 13.83366
       objectReference: {fileID: 0}
     - target: {fileID: 6709311501589378962, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_Size.y
-      value: 10
+      value: 40.96
       objectReference: {fileID: 0}
     - target: {fileID: 6709311501589378962, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 884150786, guid: 8d4cb0133785abd44ad1614711ca5809, type: 3}
     - target: {fileID: 6709311501589378962, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6709311501589378962, guid: 00bd4ee18d1342346aa643d44a792c12, type: 3}
       propertyPath: m_WasSpriteAssigned
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
