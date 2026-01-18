@@ -1,5 +1,7 @@
+using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class SwapToInsideView : MonoBehaviour
 {
@@ -14,6 +16,8 @@ public class SwapToInsideView : MonoBehaviour
 	public GameObject Sliwa;
 	public GameObject Clooney;
 	public GameObject BatonRouge;
+
+	public Sprite tombstone;
 
     private void OnEnable()
     {
@@ -44,16 +48,39 @@ public class SwapToInsideView : MonoBehaviour
 			playerCam.enabled = false;
 			inside = true;
 
-			if(PartyManager.Instance.HasPartyMember("Gleep") && PartyManager.Instance.HadGleepBefore)
-				{
 
+			Gleep.SetActive(false);
+			JoshAllen.SetActive(false);
+			Sliwa.SetActive(false);
+			Clooney.SetActive(false);
+			BatonRouge.SetActive(false);
+
+
+			if (PartyManager.Instance.HasPartyMember("Gleep"))
+			{
+				Gleep.SetActive(true);
 			}
-
-
-
-
-
-
+			if(!PartyManager.Instance.HasPartyMember("Gleep") && PartyManager.Instance.HadGleepBefore)
+			{
+				Gleep.GetComponent<UnityEngine.UI.Image>().sprite = tombstone;
+				Gleep.SetActive(true);
+			}
+			if (PartyManager.Instance.HasPartyMember("JoshAllen"))
+			{
+				JoshAllen.SetActive(true);
+			}
+			if (PartyManager.Instance.HasPartyMember("Sliwa"))
+			{
+				Sliwa.SetActive(true);
+			}
+			if (PartyManager.Instance.HasPartyMember("BatonRouge"))
+			{
+				BatonRouge.SetActive(true);
+			}
+			if (PartyManager.Instance.HasPartyMember("DannyOcean"))
+			{
+				Clooney.SetActive(true);
+			}
 
 		}
 	}
