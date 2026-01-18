@@ -119,6 +119,128 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &110155907
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3662102386504550563, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+      propertyPath: _InteractionCallback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 110155909}
+    - target: {fileID: 3662102386504550563, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+      propertyPath: _InteractionCallback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Penhaviour
+      objectReference: {fileID: 0}
+    - target: {fileID: 3662102386504550563, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+      propertyPath: _InteractionCallback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: VotingBooth, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4465219321147022651, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+      propertyPath: m_Name
+      value: Voting Booth
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918219474501688847, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918219474501688847, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918219474501688847, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918219474501688847, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918219474501688847, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918219474501688847, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918219474501688847, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918219474501688847, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918219474501688847, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4918219474501688847, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4465219321147022651, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 110155909}
+  m_SourcePrefab: {fileID: 100100000, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+--- !u!1 &110155908 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4465219321147022651, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+  m_PrefabInstance: {fileID: 110155907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &110155909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110155908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 631484da3b23b3046bee4ce153f39510, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VotingBooth
+  _Dialogues:
+  - dialogue: {fileID: 0}
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 110155909}
+          m_TargetAssemblyTypeName: VotingBooth, Assembly-CSharp
+          m_MethodName: NoProgress
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - dialogue: {fileID: 0}
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 110155909}
+          m_TargetAssemblyTypeName: VotingBooth, Assembly-CSharp
+          m_MethodName: Vote
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &447880014
 GameObject:
   m_ObjectHideFlags: 0
@@ -1366,3 +1488,4 @@ SceneRoots:
   - {fileID: 7495970622656443610}
   - {fileID: 1743190866}
   - {fileID: 861124455}
+  - {fileID: 110155907}
