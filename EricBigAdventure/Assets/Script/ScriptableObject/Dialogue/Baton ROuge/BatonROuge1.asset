@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 066e5a3b693f4cb4995d57f8d0f3efef, type: 3}
   m_Name: BatonROuge1
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  currentIndex: 1
+  currentIndex: 2
   lines:
-  - text: 1
-    audio: {fileID: 0}
+  - text: '*unintelligible*'
+    audio: {fileID: 8300000, guid: d5db9f2451a65bd48aa5178f3f861a62, type: 3}
     style: BatonRouge
-    animation: phone
+    animation: 
+  - text: What is he even saying...
+    audio: {fileID: 8300000, guid: 712f3b280094cb249b4cc7af83ef98ff, type: 3}
+    style: Eric
+    animation: talk

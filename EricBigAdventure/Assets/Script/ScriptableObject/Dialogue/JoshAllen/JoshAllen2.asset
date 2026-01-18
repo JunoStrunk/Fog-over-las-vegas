@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   currentIndex: 0
   lines:
-  - text: 2
-    audio: {fileID: 0}
+  - text: I don't have any cool looking footballs to throw :(
+    audio: {fileID: 8300000, guid: e742b327527935c41bb5c5aa3258416a, type: 3}
     style: JoshAllen
     animation: 
+  - text: Seems like a tough situation.
+    audio: {fileID: 8300000, guid: 76b38489547bb804a9bb77607ee3d2ae, type: 3}
+    style: Eric
+    animation: talk

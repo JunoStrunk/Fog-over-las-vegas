@@ -1,9 +1,11 @@
+using System.Collections;
 using UnityEngine;
 
 public class GleepDeathEvents : MonoBehaviour
 {
 	public AudioClip crowdNoise;
 	public GameObject jA;
+	public BatonRougeMayor mayor;
 
     private void Start()
     {
@@ -22,5 +24,13 @@ public class GleepDeathEvents : MonoBehaviour
 	public void End()
 	{
 		PartyManager.Instance.AddPartyMemberAtGameObject("JoshAllen", jA);
+		StartCoroutine(MomentOfSilence());
 	}
+
+	IEnumerator MomentOfSilence()
+	{
+		yield return new WaitForSeconds(0.8f);
+        mayor.PlayEndingDialogue();
+
+    }
 }

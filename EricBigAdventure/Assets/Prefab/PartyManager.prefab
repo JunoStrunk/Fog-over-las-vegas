@@ -62,7 +62,7 @@ MonoBehaviour:
     highBound: 0
   - name: Roswell
     min: 0.05
-    max: 1.2
+    max: 1.35
     lowBound: -4
     highBound: 1
   - name: Vegas In Fog
@@ -75,3 +75,4 @@ MonoBehaviour:
   _DannyOcean: {fileID: 2255682322181531286, guid: 9be99a73d484f5c47b9a860dc4c82a43, type: 3}
   _Sliwa: {fileID: 2255682322181531286, guid: e1974a9eef518c84ea5f171c5cb6006f, type: 3}
   _BatonRouge: {fileID: 2255682322181531286, guid: 7eeb51fe0a628864e8f9c50028c40019, type: 3}
+  HadGleepBefore: 0

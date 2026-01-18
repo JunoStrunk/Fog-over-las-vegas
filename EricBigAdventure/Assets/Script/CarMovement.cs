@@ -24,7 +24,7 @@ public class CarMovement : MonoBehaviour
 		if(StoryManager.Instance.GetProgress("BatonRouge") >= 2)
 		{
 			_SpriteRenderer.sprite = _Fanboat;
-			_SpriteRenderer.transform.localScale = Vector3.one * 4;
+			_SpriteRenderer.transform.localScale = Vector3.one * 3;
 			speed *= 0.8f;
 		}
 	}

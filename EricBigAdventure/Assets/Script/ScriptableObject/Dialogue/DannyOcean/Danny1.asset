@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   currentIndex: 0
   lines:
-  - text: hey it's me danny ocean
-    audio: {fileID: 0}
+  - text: I'm in the mood for a hesit...
+    audio: {fileID: 8300000, guid: 1edabaf5c95cf964ca192282fdd3d9b5, type: 3}
     style: DannyOcean
     animation: 
+  - text: We'll be in touch.
+    audio: {fileID: 8300000, guid: 7a1edf4874e68f644abfe6257e4d32bf, type: 3}
+    style: Eric
+    animation: talk

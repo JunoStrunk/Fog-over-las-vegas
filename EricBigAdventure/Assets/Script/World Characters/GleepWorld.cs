@@ -47,6 +47,12 @@ public class GleepWorld : MonoBehaviour
     public void IncrementStory()
     {
         StoryManager.Instance.SetProgress("Roswell", 1);
+
+        if (StoryManager.Instance.GetProgress("Roswell") > 0 && StoryManager.Instance.GetProgress("Fan") > 1)
+        {
+            _interactable.interactText = "Reunite";
+        }
+
         _interactable.Reenable();
     }
 

@@ -12,9 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 066e5a3b693f4cb4995d57f8d0f3efef, type: 3}
   m_Name: Pen 2
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  currentIndex: 0
+  currentIndex: 2
   lines:
-  - text: 2
-    audio: {fileID: 0}
-    style: 
+  - text: Danny, you're up!
+    audio: {fileID: 8300000, guid: 3ffaea9d859148d40894daaf6298ca60, type: 3}
+    style: Eric
+    animation: hand
+  - text: On it.
+    audio: {fileID: 8300000, guid: 1ffc75a4abc7c31459002ead09ebb14f, type: 3}
+    style: DannyOcean
     animation: 

@@ -24,8 +24,7 @@ public class BillsFan : MonoBehaviour
 
         if(StoryManager.Instance.GetProgress("Fan") > 1)
         {
-            _Spriter.sprite = dead;
-            _interactable.interactText = "Mourn";
+            gameObject.SetActive(false);
         }
     }
 
@@ -91,6 +90,9 @@ public class BillsFan : MonoBehaviour
     System.Collections.IEnumerator WaitToMourn()
     {
         yield return new WaitForSeconds(5);
+
+        StoryManager.Instance.SetProgress("Fan", 2);
+
         _interactable.Reenable();
 
     }

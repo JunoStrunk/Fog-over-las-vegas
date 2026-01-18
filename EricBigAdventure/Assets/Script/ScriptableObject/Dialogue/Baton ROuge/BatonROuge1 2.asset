@@ -12,9 +12,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 066e5a3b693f4cb4995d57f8d0f3efef, type: 3}
   m_Name: BatonROuge1 2
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
-  currentIndex: 0
+  currentIndex: 1
   lines:
-  - text: 2
-    audio: {fileID: 0}
+  - text: '*unintelligible*'
+    audio: {fileID: 8300000, guid: 8c259fa71afbb6941afaea8de34e40f9, type: 3}
     style: BatonRouge
+    animation: 
+  - text: 
+    audio: {fileID: 8300000, guid: 10700aef6102537459532b6d3bcf8e8e, type: 3}
+    style: Gleep
+    animation: 
+  - text: So he needs our help to save his son?? Can you ask him if he'll come with
+      me to LA?
+    audio: {fileID: 8300000, guid: 26bbb9b3ba4befa4ab288b88f294b682, type: 3}
+    style: Eric
+    animation: talk
+  - text: 
+    audio: {fileID: 8300000, guid: ae61214d4b4f2bb4d94f32d102de82b6, type: 3}
+    style: Gleep
+    animation: 
+  - text: '*unintelligible*'
+    audio: {fileID: 8300000, guid: e7a772c7cfea04f4e897e6ed7c611962, type: 3}
+    style: BatonRouge
+    animation: 
+  - text: 
+    audio: {fileID: 8300000, guid: 231545aaddab2dc46ae37e8d9c929802, type: 3}
+    style: Gleep
+    animation: 
+  - text: Great! I'll see what we can do!
+    audio: {fileID: 8300000, guid: 28aba7d53c679324c95f8371d81bda6a, type: 3}
+    style: Eric
+    animation: talk
+  - text: That guy seems really nice! Go long!
+    audio: {fileID: 8300000, guid: 0b583439eb068bd4d8a319ff8ecb1d60, type: 3}
+    style: JoshAllen
     animation: 

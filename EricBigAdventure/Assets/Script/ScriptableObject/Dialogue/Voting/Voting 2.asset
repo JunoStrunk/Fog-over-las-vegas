@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   currentIndex: 0
   lines:
-  - text: 1
-    audio: {fileID: 0}
-    style: 
-    animation: 
+  - text: It's the New York Mayoral Election. I should do my part!
+    audio: {fileID: 8300000, guid: 851bc6731143960408250b07e9205f7d, type: 3}
+    style: Eric
+    animation: talk

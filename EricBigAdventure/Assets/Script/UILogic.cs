@@ -86,6 +86,7 @@ public class UILogic : MonoBehaviour
 
             if (_currentLine.audio != null)
             {
+                AudioManager.Instance.PlaySound( _currentLine.audio );
                 StartCoroutine(LineDelay(_currentLine.audio.length));
             }
 
