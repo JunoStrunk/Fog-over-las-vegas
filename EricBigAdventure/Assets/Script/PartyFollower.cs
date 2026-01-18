@@ -1,11 +1,19 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 
 public class PartyFollower : MonoBehaviour
 {
     [SerializeField] public GameObject _FollowTarget;
     [SerializeField] private GameObject _Sprite;
     [SerializeField] private SpriteRenderer _SpriteRenderer;
+
+    [SerializeField] Sprite Base;
+    [SerializeField] Sprite WalkH;
+    [SerializeField] Sprite WalkV;
+    [SerializeField] Sprite Roll;
+    [SerializeField] Sprite Parry;
 
     public float followDistance = 2.0f;
     public float stopDistance = 1.0f;
@@ -26,6 +34,9 @@ public class PartyFollower : MonoBehaviour
     void Start()
     {
         _RB = GetComponent<Rigidbody2D>();
+
+        InputSystem.actions.FindAction("Roll").performed += OnRoll;
+        InputSystem.actions.FindAction("Parry").performed += OnParry;
     }
 
     // Update is called once per frame
@@ -77,6 +88,14 @@ public class PartyFollower : MonoBehaviour
             }
 
             _RB.MovePosition(transform.position + (moveVector * Time.fixedDeltaTime));
+
+            if (moveVector.y != 0) _SpriteRenderer.sprite = WalkV;
+            else _SpriteRenderer.sprite = WalkH;
+        }
+
+        else
+        {
+            _SpriteRenderer.sprite = Base;
         }
     }
 
@@ -90,4 +109,13 @@ public class PartyFollower : MonoBehaviour
         _scale = scale; 
     }
 
+    private void OnRoll(InputAction.CallbackContext context)
+    {
+
+    }
+
+    private void OnParry(InputAction.CallbackContext context)
+    {
+
+    }
 }

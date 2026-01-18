@@ -223,7 +223,7 @@ Transform:
   m_GameObject: {fileID: 173092195}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.62, z: 0}
+  m_LocalPosition: {x: 0, y: -0.62, z: 0.5}
   m_LocalScale: {x: 0.3375, y: 0.575, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1492,10 +1492,54 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6354797707666484307, guid: 81ae820ceb94b254ca519673a2f0e697, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7e9697c8b41f50e41a5a4cca595b0309, type: 2}
+    - target: {fileID: 6354797707666484307, guid: 81ae820ceb94b254ca519673a2f0e697, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 6758286624483537251, guid: 7e9697c8b41f50e41a5a4cca595b0309, type: 2}
+    - target: {fileID: 6354797707666484307, guid: 81ae820ceb94b254ca519673a2f0e697, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7110345309068624495, guid: 81ae820ceb94b254ca519673a2f0e697, type: 3}
       propertyPath: m_Name
       value: Camera + UI
       objectReference: {fileID: 0}
+    - target: {fileID: 8509489495360903181, guid: 81ae820ceb94b254ca519673a2f0e697, type: 3}
+      propertyPath: styles.Array.data[0].font
+      value: 
+      objectReference: {fileID: 11400000, guid: 7e9697c8b41f50e41a5a4cca595b0309, type: 2}
+    - target: {fileID: 8509489495360903181, guid: 81ae820ceb94b254ca519673a2f0e697, type: 3}
+      propertyPath: styles.Array.data[1].font
+      value: 
+      objectReference: {fileID: 11400000, guid: 7e9697c8b41f50e41a5a4cca595b0309, type: 2}
+    - target: {fileID: 8509489495360903181, guid: 81ae820ceb94b254ca519673a2f0e697, type: 3}
+      propertyPath: styles.Array.data[2].font
+      value: 
+      objectReference: {fileID: 11400000, guid: 7e9697c8b41f50e41a5a4cca595b0309, type: 2}
+    - target: {fileID: 8509489495360903181, guid: 81ae820ceb94b254ca519673a2f0e697, type: 3}
+      propertyPath: styles.Array.data[3].font
+      value: 
+      objectReference: {fileID: 11400000, guid: 7e9697c8b41f50e41a5a4cca595b0309, type: 2}
+    - target: {fileID: 8509489495360903181, guid: 81ae820ceb94b254ca519673a2f0e697, type: 3}
+      propertyPath: styles.Array.data[4].font
+      value: 
+      objectReference: {fileID: 11400000, guid: 7e9697c8b41f50e41a5a4cca595b0309, type: 2}
+    - target: {fileID: 8509489495360903181, guid: 81ae820ceb94b254ca519673a2f0e697, type: 3}
+      propertyPath: styles.Array.data[5].font
+      value: 
+      objectReference: {fileID: 11400000, guid: 4fca2fa69cdc8614f9e449ec806ce358, type: 2}
+    - target: {fileID: 8509489495360903181, guid: 81ae820ceb94b254ca519673a2f0e697, type: 3}
+      propertyPath: styles.Array.data[6].font
+      value: 
+      objectReference: {fileID: 11400000, guid: 7e9697c8b41f50e41a5a4cca595b0309, type: 2}
+    - target: {fileID: 8509489495360903181, guid: 81ae820ceb94b254ca519673a2f0e697, type: 3}
+      propertyPath: styles.Array.data[7].font
+      value: 
+      objectReference: {fileID: 11400000, guid: 7e9697c8b41f50e41a5a4cca595b0309, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -123,11 +123,17 @@ MonoBehaviour:
   _FollowTarget: {fileID: 0}
   _Sprite: {fileID: 6258974932211199823}
   _SpriteRenderer: {fileID: 8109447652646922383}
+  Base: {fileID: 884150786, guid: 8d4cb0133785abd44ad1614711ca5809, type: 3}
+  WalkH: {fileID: 883178654, guid: 32135b5175eb48d46b71bd9caf8971f2, type: 3}
+  WalkV: {fileID: 884150786, guid: 8d4cb0133785abd44ad1614711ca5809, type: 3}
+  Roll: {fileID: -1711589680, guid: ea150f5b0a6ab2a4298dd9218a406045, type: 3}
+  Parry: {fileID: 397996498, guid: d8af6af33c875e94c9ceb33e7294486b, type: 3}
   followDistance: 3
   stopDistance: 1.5
   speed: 10
   _stepAfter: 0.33
   _rotationSize: 7
+  son: {fileID: 0}
 --- !u!1001 &3285033910375309085
 PrefabInstance:
   m_ObjectHideFlags: 0
