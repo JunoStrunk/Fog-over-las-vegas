@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 066e5a3b693f4cb4995d57f8d0f3efef, type: 3}
+  m_Name: PhoneCall
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  currentIndex: 7
+  lines:
+  - text: '*Phone Ringing*'
+    audio: {fileID: 8300000, guid: 6765209bd17a43f49b3bcefb335c9caa, type: 3}
+    style: 
+    animation: 
+  - text: Hello?
+    audio: {fileID: 8300000, guid: d7aec7e0d08368142a3805c0eb9e4bd5, type: 3}
+    style: Eric
+    animation: phone
+  - text: Hello, Eric. Your job is starting soon. You need to get to Los Angeles.
+      Now.
+    audio: {fileID: 8300000, guid: 1e0aff3d2391cae4f94bcb2ec0aff851, type: 3}
+    style: 
+    animation: 
+  - text: But LA is locked!
+    audio: {fileID: 8300000, guid: f1561f4df3117dd478df1c449136fe9d, type: 3}
+    style: Eric
+    animation: phone
+  - text: Not if you get 5 keys to the city from various mayors across the country.
+      Good luck.
+    audio: {fileID: 8300000, guid: 3fe7f8628c9e24b4f85031e6865f1e31, type: 3}
+    style: 
+    animation: 
+  - text: '*Phone Disconnect*'
+    audio: {fileID: 8300000, guid: 95126b648bbda854ba5cc5d20c12d018, type: 3}
+    style: 
+    animation: 
+  - text: Well I guess I better get going!
+    audio: {fileID: 8300000, guid: 425dd0d07c4723640aa201ba4c5151aa, type: 3}
+    style: Eric
+    animation: talk
