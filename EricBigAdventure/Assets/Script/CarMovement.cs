@@ -11,7 +11,8 @@ public class CarMovement : MonoBehaviour
 	private Vector2 _moveDirection;
 
 	private Rigidbody2D _RB;
-	private SpriteRenderer _SpriteRenderer;
+	[SerializeField] private SpriteRenderer _SpriteRenderer;
+	[SerializeField] private Sprite _Fanboat;
 	public bool dontTp;
 	// Start is called once before the first execution of Update after the MonoBehaviour is created
 	void Start()
@@ -20,6 +21,12 @@ public class CarMovement : MonoBehaviour
 
 		_RB = GetComponent<Rigidbody2D>();
 		_SpriteRenderer = GetComponentInChildren<SpriteRenderer>();
+		if(StoryManager.Instance.GetProgress("BatonRouge") >= 2)
+		{
+			_SpriteRenderer.sprite = _Fanboat;
+			_SpriteRenderer.transform.localScale = Vector3.one * 4;
+			speed *= 0.8f;
+		}
 	}
 
 	// Update is called once per frame

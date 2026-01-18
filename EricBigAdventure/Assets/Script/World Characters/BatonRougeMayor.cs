@@ -15,7 +15,7 @@ public class BatonRougeMayor : MonoBehaviour
     {
         _interactable = GetComponentInChildren<Interactable>();
 
-        if(StoryManager.Instance.GetProgress("Baton Rouge") > 1)
+        if(StoryManager.Instance.GetProgress("BatonRouge") > 1)
         {
             gameObject.SetActive(false);
         }

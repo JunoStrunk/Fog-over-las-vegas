@@ -11,6 +11,10 @@ public class BoatBob : MonoBehaviour
     void Start()
     {
         _initialY = transform.position.y;
+        if (StoryManager.Instance.GetProgress("BatonRouge") >= 2)
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     // Update is called once per frame

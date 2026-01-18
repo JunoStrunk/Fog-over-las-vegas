@@ -10,7 +10,9 @@ public class TheFog : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if(PartyManager.Instance.HasPartyMember("BatonRouge"))
+		//PartyManager.Instance.AddPartyMember("BatonRouge");
+
+		if (PartyManager.Instance.HasPartyMember("BatonRouge"))
         {
             FanboatClearsFog.Play();
         }
@@ -24,17 +26,32 @@ public class TheFog : MonoBehaviour
 
     public void Fanboat()
     {
-        GameObject daFanboat = Instantiate(_Fanboat);
-        daFanboat.transform.position = _fanboatPosition.position;
         StoryManager.Instance.SetProgress("Las Vegas", 2);
 
         //TODO: audio clip
-        StartCoroutine(FanboatDelay());
+        GetComponent<Animator>().SetTrigger("ClearFog");
     }
 
-    private IEnumerator FanboatDelay()
+    public void FanboatDelay()
     {
-        yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene("Las Vegas");
+    }
+
+    public AudioClip Screech;
+    public AudioClip Fan;
+    public Animator fog;
+    public void FanNoise()
+    {
+        GetComponent<AudioSource>().PlayOneShot(Fan);
+    }
+
+    public void BrakeScreech()
+    {
+		GetComponent<AudioSource>().PlayOneShot(Screech);
+	}
+
+    public void MoveTheFog()
+    {
+        fog.SetTrigger("MoveFog");
     }
 }

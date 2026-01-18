@@ -17,13 +17,12 @@ public class UILogic : MonoBehaviour
 
     [SerializeField] private TMP_Text _Subtitle;
 
-    void Start()
+    void Awake()
     {
         _InteractionDriver = FindAnyObjectByType<InteractionDriver>();
         _Styler = GetComponent<SubtitleStyles>();
         _playerMovement = FindAnyObjectByType<PlayerMovement>();
     }
-
 
     // Update is called once per frame
     void Update()

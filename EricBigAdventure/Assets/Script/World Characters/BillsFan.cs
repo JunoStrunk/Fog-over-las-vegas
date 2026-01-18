@@ -80,10 +80,18 @@ public class BillsFan : MonoBehaviour
         GetComponent<Animator>().SetTrigger("Kill");
 
         _interactable.interactText = "Mourn";
+        StartCoroutine(WaitToMourn());
     }
 
     public void Audio()
     {
         GetComponent<AudioSource>().PlayOneShot(foxTheme);
+    }
+
+    System.Collections.IEnumerator WaitToMourn()
+    {
+        yield return new WaitForSeconds(5);
+        _interactable.Reenable();
+
     }
 }

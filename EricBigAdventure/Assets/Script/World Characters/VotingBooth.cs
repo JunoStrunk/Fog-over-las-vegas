@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class VotingBooth : MonoBehaviour
 {
@@ -42,8 +43,6 @@ public class VotingBooth : MonoBehaviour
 
     public void Vote()
     {
-        //TODO: Load into voting scene
-        //StoryManager.Instance.SetProgress("Pen", 1);
-        //TODO: Danny works his magic
+        SceneManager.LoadScene("Voting");
     }
 }

@@ -6,7 +6,7 @@ public class WorldMapLocation : MonoBehaviour
     public string WorldName;
     public bool CannotFire;
 
-
+    public AudioClip ericNeedsMoreMayors;
     public void OnTriggerEnter2D(Collider2D collision)
     {
             if (collision.GetComponent<CarMovement>() != null)
@@ -21,7 +21,19 @@ public class WorldMapLocation : MonoBehaviour
                 {
                     WorldName = "Vegas In Fog";
                 }
-                SceneManager.LoadScene(WorldName);
+                if(WorldName == "Los Angeles")
+                {
+                    if(StoryManager.Instance.GetProgress("Voting") == 3)
+                    {
+                        WorldName = "LalaLand";
+				    }
+                    else
+                    {
+                        AudioManager.Instance.PlaySound(ericNeedsMoreMayors);
+                        return;
+                    }
+                }
+				SceneManager.LoadScene(WorldName);
             }
     }
     public void OnTriggerExit2D(Collider2D collision)
