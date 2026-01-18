@@ -16,7 +16,7 @@ public class WorldMapLocation : MonoBehaviour
                     return;
                 }
 
-                if(WorldName == "Los Angeles")
+                if(WorldName == "LosAngeles")
                 {
                     if(PartyManager.Instance.HasPartyMember("Sliwa"))
                     {
