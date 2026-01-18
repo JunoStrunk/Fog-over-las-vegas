@@ -20,6 +20,8 @@ public class JoshAllenWorld : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        StoryManager.Instance.SetProgress("Las Vegas", 1);
+
         _interactable = GetComponentInChildren<Interactable>();
 
         if (StoryManager.Instance.GetProgress("Buffalo") > 0 && StoryManager.Instance.GetProgress("Las Vegas") > 0)
