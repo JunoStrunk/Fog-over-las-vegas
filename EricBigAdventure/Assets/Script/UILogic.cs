@@ -14,6 +14,7 @@ public class UILogic : MonoBehaviour
     private Dialogue _currentDialogue;
     private UnityEvent _dialogueFinishedCallback;
     private PlayerMovement _playerMovement;
+    private DialogueLine _currentLine;
 
     [SerializeField] private TMP_Text _Subtitle;
 
@@ -63,22 +64,34 @@ public class UILogic : MonoBehaviour
     {
         if (_currentDialogue.currentIndex < _currentDialogue.GetLength())
         {
-            DialogueLine currentLine = _currentDialogue.GetNextLine();
-            SetSubtitle(currentLine.text, currentLine.style);
+            _currentLine = _currentDialogue.GetNextLine();
+            SetSubtitle(_currentLine.text, _currentLine.style);
 
-            if(currentLine.animation != "")
+            if(_currentLine.animation != "")
             {
+                if(_currentLine.animation == "talk")
+                {
+                    _playerMovement.isTalking = true;
+                }
 
+                else if(_currentLine.animation == "hand")
+                {
+                    _playerMovement.GiveItem();
+                }
+                else if(_currentLine.animation == "phone")
+                {
+                    _playerMovement.PhoneCall();
+                }
             }
 
-            if (currentLine.audio != null)
+            if (_currentLine.audio != null)
             {
-                StartCoroutine(LineDelay(currentLine.audio.length));
+                StartCoroutine(LineDelay(_currentLine.audio.length));
             }
 
             else
             {
-                StartCoroutine(LineDelay(0.3f));
+                StartCoroutine(LineDelay(3f));
             }
         }
 
@@ -99,6 +112,13 @@ public class UILogic : MonoBehaviour
     private IEnumerator LineDelay(float length)
     {
         yield return new WaitForSeconds(length);
+        if(_currentLine.animation != "")
+        {
+            if(_currentLine.animation == "talk")
+            {
+                _playerMovement.isTalking = false;
+            }
+        }
         PlayLine();
     }
 }
