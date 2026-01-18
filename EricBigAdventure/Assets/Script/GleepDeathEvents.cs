@@ -7,8 +7,8 @@ public class GleepDeathEvents : MonoBehaviour
 
     private void Start()
     {
-		PartyManager.Instance.AddPartyMember("JoshAllen");
-		PartyManager.Instance.AddPartyMember("Gleep");
+		//PartyManager.Instance.AddPartyMember("JoshAllen");
+		//PartyManager.Instance.AddPartyMember("Gleep");
 	}
     public void CrowdNoise()
     {

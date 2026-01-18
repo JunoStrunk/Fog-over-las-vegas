@@ -5,7 +5,7 @@ using UnityEngine;
 public class Pen : MonoBehaviour
 {
     private Interactable _interactable;
-
+    public Animator _animator;
     [SerializeField] List<Dialogue.DialogueEntry> _Dialogues;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -43,6 +43,8 @@ public class Pen : MonoBehaviour
     public void StealPen()
     {
         StoryManager.Instance.SetProgress("Pen", 1);
-        //TODO: Danny works his magic
+        //zmbe works his magic
+        PartyManager.Instance.RemovePartyMember("DannyOcean");
+        _animator.SetTrigger("Hiest");
     }
 }
