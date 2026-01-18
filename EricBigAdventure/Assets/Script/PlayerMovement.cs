@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -45,6 +46,12 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         _moveDirection = _move.ReadValue<Vector2>().normalized;
+
+        if(SceneManager.GetActiveScene().name == "PhoneCall" && !isCalling && !isTalking)
+        {
+            MyAnimator.SetInteger("StateNum", 8);
+            return;
+        }
 
         if(isTalking)
         {
@@ -157,7 +164,7 @@ public class PlayerMovement : MonoBehaviour
 		isCalling = true;
 		MyAnimator.SetInteger("StateNum", 10);
 		MyAnimator.SetTrigger("PhoneTrigger");
-		StartCoroutine(CallDelaySeconds(1));
+		StartCoroutine(CallDelaySeconds(2));
 	}
 
 	private IEnumerator RollDelaySeconds(float seconds)
