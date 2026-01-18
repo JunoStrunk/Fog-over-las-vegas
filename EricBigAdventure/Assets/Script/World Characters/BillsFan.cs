@@ -80,6 +80,7 @@ public class BillsFan : MonoBehaviour
         GetComponent<Animator>().SetTrigger("Kill");
 
         _interactable.interactText = "Mourn";
+        _interactable.Reenable();
     }
 
     public void Audio()
