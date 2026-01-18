@@ -59,7 +59,7 @@ public class MuppetLineManager : MonoBehaviour
             _Instance = this;
             LoggedPos = new List<Vector2>();
             LoggedRot = new List<Quaternion>();
-            CarLastLoc = new Vector3(0, 0, -2);
+            CarLastLoc = new Vector3(232.699997f, -87.9000015f, -2);
             firstTime = true;
 
             DontDestroyOnLoad(gameObject);

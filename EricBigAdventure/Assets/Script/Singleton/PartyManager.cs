@@ -57,7 +57,7 @@ public class PartyManager : MonoBehaviour
     {
         _partyMembers.Clear();
 
-        if (scene.name != "WorldMap")
+        if (scene.name != "WorldMap" && scene.name != "Voting")
         {
             _currentFollowTarget = FindAnyObjectByType<PlayerMovement>().gameObject;
             foreach(string partyMember in _Party)
