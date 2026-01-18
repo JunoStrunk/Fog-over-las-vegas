@@ -7,11 +7,14 @@ public class BillsFan : MonoBehaviour
     private Interactable _interactable;
     public AudioClip foxTheme;
     [SerializeField] List<Dialogue.DialogueEntry> _Dialogues;
+
+    [SerializeField] private Sprite dead;
+    private SpriteRenderer _Spriter;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        PartyManager.Instance.AddPartyMember("JoshAllen");
-
+        _Spriter = GetComponent<SpriteRenderer>();
 
         _interactable = GetComponentInChildren<Interactable>();
         if(PartyManager.Instance.HasPartyMember("JoshAllen") && StoryManager.Instance.GetProgress("Fan") > 0)
@@ -21,7 +24,8 @@ public class BillsFan : MonoBehaviour
 
         if(StoryManager.Instance.GetProgress("Fan") > 1)
         {
-            gameObject.SetActive(false);
+            _Spriter.sprite = dead;
+            _interactable.interactText = "Mourn";
         }
     }
 
@@ -50,6 +54,11 @@ public class BillsFan : MonoBehaviour
                 _Dialogues[1].Play();
             }
         }
+
+        else
+        {
+            _Dialogues[3].Play();
+        }
     }
 
     public void IncrementStory()
@@ -69,6 +78,8 @@ public class BillsFan : MonoBehaviour
 
         //Kill fan with football robot
         GetComponent<Animator>().SetTrigger("Kill");
+
+        _interactable.interactText = "Mourn";
     }
 
     public void Audio()
