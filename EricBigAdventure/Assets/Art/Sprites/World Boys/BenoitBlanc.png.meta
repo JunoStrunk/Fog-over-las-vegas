@@ -113,10 +113,10 @@ TextureImporter:
       name: BenoitBlanc_0
       rect:
         serializedVersion: 2
-        x: 239
-        y: 29
-        width: 345
-        height: 1195
+        x: 160
+        y: 643
+        width: 477
+        height: 581
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,6 +127,50 @@ TextureImporter:
       bones: []
       spriteID: edfb0348e054ed445ac29ca32cbce887
       internalID: 1369441003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenoitBlanc_1
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 86
+        width: 165
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d38116c4ddc55694a9a5c458ba096904
+      internalID: 2135539389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BenoitBlanc_2
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 29
+        width: 101
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d7195983683ed459612f8fc40c15af
+      internalID: -1075645812
       vertices: []
       indices: 
       edges: []
@@ -148,6 +192,8 @@ TextureImporter:
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       BenoitBlanc_0: 1369441003
+      BenoitBlanc_1: 2135539389
+      BenoitBlanc_2: -1075645812
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
