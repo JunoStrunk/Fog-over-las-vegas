@@ -18,7 +18,7 @@ public class WorldMapLocation : MonoBehaviour
 
                 if(WorldName == "Los Angeles")
                 {
-                    if(StoryManager.Instance.GetProgress("Voting") == 3)
+                    if(PartyManager.Instance.HasPartyMember("Sliwa"))
                     {
                         WorldName = "LalaLand";
 				    }

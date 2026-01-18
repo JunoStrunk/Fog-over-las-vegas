@@ -6,6 +6,7 @@ public class Mayornager : MonoBehaviour
     [SerializeField] Dialogue.DialogueEntry sliwaDialogue;
     [SerializeField] GameObject theGuys;
     [SerializeField] AudioClip sliwaFanfare;
+    [SerializeField] GameObject kindlyMamdani;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,6 +24,11 @@ public class Mayornager : MonoBehaviour
         {
             SliwaWin();
         }
+
+        if(StoryManager.Instance.GetProgress("Voting") == 1 || StoryManager.Instance.GetProgress("Voting") == 3)
+        {
+            kindlyMamdani.SetActive(true);
+        }
     }
 
     // Update is called once per frame
@@ -34,16 +40,17 @@ public class Mayornager : MonoBehaviour
     void MamdaniWin()
     {
         mamdaniDialogue.Play();
+        StoryManager.Instance.SetProgress("Voting", 3);
     }
 
     void SliwaWin()
     {
         sliwaDialogue.Play();
+        StoryManager.Instance.SetProgress("Voting", 4);
     }
 
     public void DialogueEnding()
     {
-        StoryManager.Instance.SetProgress("Voting", 3);
         PartyManager.Instance.AddPartyMember("Sliwa", sliwaFanfare);
     }
 }
