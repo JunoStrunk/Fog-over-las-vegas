@@ -523,7 +523,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &618311881
 Transform:
@@ -938,6 +938,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3078807537350710193, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396545992401350219, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+      propertyPath: m_Size.x
+      value: 2.8150835
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396545992401350219, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0011792183
+      objectReference: {fileID: 0}
     - target: {fileID: 3662102386504550563, guid: c6e6ec0400c6100459ff59cfa29fdf45, type: 3}
       propertyPath: interactText
       value: What

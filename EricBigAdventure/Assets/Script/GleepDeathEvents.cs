@@ -9,6 +9,10 @@ public class GleepDeathEvents : MonoBehaviour
     {
 		//PartyManager.Instance.AddPartyMember("JoshAllen");
 		//PartyManager.Instance.AddPartyMember("Gleep");
+		if(StoryManager.Instance.GetProgress("BatonRouge") >=2 )
+		{
+			gameObject.SetActive(false);
+		}
 	}
     public void CrowdNoise()
     {
